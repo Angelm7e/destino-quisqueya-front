@@ -1,9 +1,11 @@
 import 'package:destino_quisquella_front/models/destiny.model.dart';
+import 'package:destino_quisquella_front/utilites/app_colors.dart';
+import 'package:destino_quisquella_front/widgets/headerCarousel.widget.dart';
 import 'package:flutter/material.dart';
 
 class PlaceDetailScreen extends StatefulWidget {
-  const PlaceDetailScreen({super.key});
-
+  const PlaceDetailScreen({super.key, required this.place});
+  final Place place;
   static const String routeName = '/placeDetailScreen';
 
   @override
@@ -13,20 +15,27 @@ class PlaceDetailScreen extends StatefulWidget {
 class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   @override
   Widget build(BuildContext context) {
-    final arg = ModalRoute.of(context)!.settings.arguments as Place;
+    // final arg = ModalRoute.of(context)!.settings.arguments as Place;
+
+    final place = widget.place;
+
     return Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBar(
             iconTheme: IconThemeData(color: Colors.white),
+            backgroundColor: AppColors.darkPrimary,
+            pinned: true,
             // title: Text(arg.name, style: TextStyle(color: Colors.white)),
             expandedHeight: 300,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text(arg.name, style: TextStyle(color: Colors.white)),
-              background: Image.asset(arg.photos.first, fit: BoxFit.cover),
+              title: Text(place.name, style: TextStyle(color: Colors.white)),
+              background: HeaderCarousel(images: place.photos, isAsset: true),
             ),
           ),
+          SliverToBoxAdapter(child: Container()),
 
+          SliverFillRemaining(),
           // SliverFillRemaining(
           //   child: SingleChildScrollView(
           //     // scrollDirection: Axis.horizontal,
@@ -94,9 +103,5 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
         ],
       ),
     );
-    // Scaffold(
-    //   appBar: AppBar(title: const Text()),
-    //   body: const Center(child: Text('Place Details Screen')),
-    // );
   }
 }

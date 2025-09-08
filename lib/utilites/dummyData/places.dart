@@ -47,6 +47,50 @@ final List<Place> placesDummy = [
   ),
 
   Place(
+    categoryId: 1,
+    id: 'playa-rincon',
+    name: 'Playa Rincón',
+    province: 'Samaná',
+    country: 'República Dominicana',
+    description:
+        'Considerada una de las playas más hermosas del mundo: arena blanca, aguas turquesa y vegetación exuberante. Ideal para familias y fotos épicas.',
+    rating: 4.8,
+    location: const GeoPoint(latitude: 19.2829, longitude: -69.3645),
+    photos: [
+      'assets/localimages/samana1.jpeg',
+      'assets/localimages/rincon_2.jpg',
+      'assets/localimages/rincon_3.jpg',
+    ],
+    info: const PlaceInfo(
+      howToGet:
+          'Desde Las Galeras, toma la carretera a Playa Rincón (aprox. 25 min). También hay botes desde la playa principal.',
+      recommendedHours: '08:00–17:30',
+      entryFee: 'Gratis (parqueo y sillas con costo opcional)',
+      services: [
+        PlaceService.parking,
+        PlaceService.restaurants,
+        PlaceService.restrooms,
+        PlaceService.rentals,
+      ],
+    ),
+    reviews: [
+      Review(
+        authorName: 'Juan P.',
+        rating: 5,
+        comment: 'Hermosa, agua cristalina. Recomiendo llegar temprano.',
+        createdAt: DateTime(2025, 6, 12),
+      ),
+      Review(
+        authorName: 'María G.',
+        rating: 4.5,
+        comment: 'Muy limpia y tranquila. Hay sombra natural.',
+        createdAt: DateTime(2025, 5, 28),
+      ),
+    ],
+    tags: ['playa', 'familiar', 'fotografía'],
+  ),
+
+  Place(
     categoryId: 2,
     id: '27-charcos-damajagua',
     name: '27 Charcos de Damajagua',

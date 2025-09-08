@@ -1,30 +1,23 @@
 import 'package:animations/animations.dart';
-import 'package:destino_quisquella_front/models/category.model.dart';
-import 'package:destino_quisquella_front/models/destiny.model.dart';
 import 'package:destino_quisquella_front/screens/places/placeDetailsScreen/placeDetailScreen.dart';
+import 'package:destino_quisquella_front/screens/places/placesByCategoryScreen/placesByCategoryScreen.dart';
 import 'package:destino_quisquella_front/utilites/dummyData/places.dart';
 import 'package:destino_quisquella_front/widgets/placeCardGrid.widget.dart';
 import 'package:flutter/material.dart';
 
-class PlacesByCategoryScreen extends StatefulWidget {
-  const PlacesByCategoryScreen({super.key});
+class MostVisitedScreen extends StatelessWidget {
+  const MostVisitedScreen({super.key});
 
-  static const String routeName = '/placesByCategoryScreen';
+  static const String routeName = '/mostVisitedScreen';
 
-  @override
-  State<PlacesByCategoryScreen> createState() => _PlacesByCategoryScreenState();
-}
-
-class _PlacesByCategoryScreenState extends State<PlacesByCategoryScreen> {
   @override
   Widget build(BuildContext context) {
-    final arg = ModalRoute.of(context)!.settings.arguments as PlaceCategory;
-    List<Place> places = placesDummy
-        .where((element) => element.categoryId == arg.id)
-        .toList();
+    // List<Place> places = placesDummy
+    //     .where((element) => element.categoryId == arg.id)
+    //     .toList();
     return Scaffold(
-      appBar: AppBar(title: Text(arg.name)),
-      body: places.isEmpty
+      appBar: AppBar(title: Text("Mas visitados")),
+      body: placesDummy.isEmpty
           ? const Center(
               child: Text('No places found', style: TextStyle(fontSize: 25)),
             )
@@ -36,7 +29,7 @@ class _PlacesByCategoryScreenState extends State<PlacesByCategoryScreen> {
                         const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
                         ),
-                    itemCount: places.length,
+                    itemCount: placesDummy.length,
                     itemBuilder: (BuildContext context, int index) {
                       return OpenContainer(
                         transitionType: ContainerTransitionType.fadeThrough,
@@ -45,10 +38,10 @@ class _PlacesByCategoryScreenState extends State<PlacesByCategoryScreen> {
                         closedColor: Theme.of(context).scaffoldBackgroundColor,
                         transitionDuration: Duration(milliseconds: 500),
                         openBuilder: (context, _) =>
-                            PlaceDetailScreen(place: places[index]),
+                            PlaceDetailScreen(place: placesDummy[index]),
                         closedBuilder: (context, VoidCallback openContainer) =>
                             PlaceCardGridWidget(
-                              place: places[index],
+                              place: placesDummy[index],
                               onTap: () {
                                 openContainer();
                               },

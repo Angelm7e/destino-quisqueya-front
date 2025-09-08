@@ -20,6 +20,7 @@ version: 1.0.0+1
 
 environment:
   sdk: ^3.9.2
+  flutter: 3.35.3
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -38,6 +39,8 @@ dependencies:
   google_fonts: ^6.3.0
   shared_preferences: ^2.5.3
   font_awesome_flutter: ^10.7.0
+  animations: ^2.0.11
+  carousel_slider: ^5.1.1
 
 dev_dependencies:
   flutter_test:

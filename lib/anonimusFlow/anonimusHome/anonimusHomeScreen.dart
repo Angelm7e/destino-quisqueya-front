@@ -1,13 +1,15 @@
-import 'package:destino_quisquella_front/generated/l10n.dart';
-import 'package:destino_quisquella_front/models/category.model.dart';
+import 'package:animations/animations.dart';
+import 'package:destino_quisquella_front/anonimusFlow/mostVisited/mostVisitedScreen.dart';
 import 'package:destino_quisquella_front/screens/places/placeDetailsScreen/placeDetailScreen.dart';
 import 'package:destino_quisquella_front/screens/places/placesByCategoryScreen/placesByCategoryScreen.dart';
 import 'package:destino_quisquella_front/utilites/app_colors.dart';
 import 'package:destino_quisquella_front/utilites/dummyData/category.dart';
 import 'package:destino_quisquella_front/utilites/dummyData/places.dart';
+import 'package:destino_quisquella_front/widgets/categoryIten.widget.dart';
+import 'package:destino_quisquella_front/widgets/headerCarousel.widget.dart';
 import 'package:destino_quisquella_front/widgets/placesCard.widget.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 class AnonimusHomeScreen extends StatefulWidget {
   const AnonimusHomeScreen({super.key});
@@ -26,29 +28,67 @@ class _AnonimusHomeScreenState extends State<AnonimusHomeScreen> {
         slivers: [
           SliverAppBar(
             centerTitle: true,
-            backgroundColor: AppColors.darkPrimary,
             pinned: true,
             expandedHeight: 300,
-            // toolbarHeight: 150,
-            // snap: true,
-            // floating: true,
-            leading: Icon(Icons.menu, color: Colors.white, size: 40),
-            // floating: true,
+            backgroundColor: AppColors.darkPrimary,
+            foregroundColor: Colors.white,
+            clipBehavior: Clip.hardEdge,
+            leading: IconButton(
+              icon: const Icon(Icons.menu, color: Colors.white, size: 40),
+              onPressed: () {},
+            ),
             flexibleSpace: FlexibleSpaceBar(
-              background: Image.asset(
-                'assets/localimages/samana2.webp',
-                fit: BoxFit.cover,
-              ),
-              title: Text(
-                S.of(context).appTitle,
+              collapseMode: CollapseMode.parallax,
+              title: const Text(
+                "Destino quisquella",
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              centerTitle: true,
+              background: HeaderCarousel(
+                images: placesDummy[2].photos,
+                // Si usas assets, cambia isAsset: true
+                isAsset: true,
+              ),
             ),
           ),
+          // SliverAppBar(
+          // centerTitle: true,
+          // backgroundColor: AppColors.darkPrimary,
+          // pinned: true,
+          // expandedHeight: 300,
+          // // toolbarHeight: 150,
+          // // snap: true,
+          // // floating: true,
+          // leading: Icon(Icons.menu, color: Colors.white, size: 40),
+          // // floating: true,
+          //   flexibleSpace: FlexibleSpaceBar(
+          //     background: CarouselSlider(
+          //       items: placesDummy[2].photos
+          //           .map(
+          //             (item) => Expanded(
+          //               child: Image.asset(item),
+          //               // decoration: BoxDecoration(
+          //               //   borderRadius: BorderRadius.circular(10),
+          //               //   image: DecorationImage(image: ),
+          //               // ),
+          //             ),
+          //           )
+          //           .toList(),
+          //       options: CarouselOptions(height: 300, autoPlay: true),
+          //     ),
+          //     title: Text(
+          //       S.of(context).appTitle,
+          //       style: TextStyle(
+          //         color: Colors.white,
+          //         fontSize: 20,
+          //         fontWeight: FontWeight.bold,
+          //       ),
+          //     ),
+          //   ),
+          // ),
           // SliverPersistentHeader(
           //   pinned: true,
           //   delegate: _PinnedHeaderDelegate(
@@ -84,18 +124,63 @@ class _AnonimusHomeScreenState extends State<AnonimusHomeScreen> {
                   width: double.infinity,
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
-                    itemCount: placesDummy.length,
+                    itemCount: placesDummy.length + 1,
                     itemBuilder: (BuildContext context, int index) {
-                      return PlaceCardWidget(
-                        onTap: () {
-                          Navigator.pushNamed(
-                            context,
-                            PlaceDetailScreen.routeName,
-                            arguments: placesDummy[index],
-                          );
-                        },
-                        placeName: placesDummy[index].name,
-                        photo: placesDummy[index].photos.first,
+                      if (index == placesDummy.length) {
+                        return TweenAnimationBuilder<Offset>(
+                          duration: const Duration(milliseconds: 500),
+                          // empieza fuera de la pantalla a la derecha
+                          // termina en su posición normal
+                          tween: Tween(
+                            begin: const Offset(1, 0),
+                            end: Offset.zero,
+                          ),
+                          curve: Curves.easeOut,
+                          builder: (context, offset, child) {
+                            return Transform.translate(
+                              offset:
+                                  offset * MediaQuery.of(context).size.width,
+                              child: GestureDetector(
+                                onTap: () {
+                                  Navigator.pushNamed(
+                                    context,
+                                    MostVisitedScreen.routeName,
+                                  );
+                                },
+                                child: Container(
+                                  color: Colors.transparent,
+                                  // height: 150,
+                                  width: 120,
+                                  child: Center(
+                                    child: Text(
+                                      'Ver todos',
+                                      style: Theme.of(
+                                        context,
+                                      ).textTheme.titleMedium,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            );
+                          },
+                        );
+                      }
+
+                      return OpenContainer(
+                        closedElevation: 0,
+                        openElevation: 0,
+                        closedColor: Theme.of(context).scaffoldBackgroundColor,
+                        transitionDuration: Duration(milliseconds: 500),
+                        openBuilder: (context, _) =>
+                            PlaceDetailScreen(place: placesDummy[index]),
+                        closedBuilder: (context, VoidCallback openContainer) =>
+                            PlaceCardWidget(
+                              onTap: () {
+                                openContainer();
+                              },
+                              placeName: placesDummy[index].name,
+                              photo: placesDummy[index].photos.first,
+                            ),
                       );
 
                       // Text('Item $index', style: TextStyle(fontSize: 20));
@@ -103,6 +188,21 @@ class _AnonimusHomeScreenState extends State<AnonimusHomeScreen> {
                   ),
                 ),
               ],
+            ),
+          ),
+          SliverToBoxAdapter(
+            child: CarouselSlider(
+              items: placesDummy[2].photos
+                  .map(
+                    (item) => Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: DecorationImage(image: AssetImage(item)),
+                      ),
+                    ),
+                  )
+                  .toList(),
+              options: CarouselOptions(height: 250, autoPlay: true),
             ),
           ),
 
@@ -237,6 +337,7 @@ class _AnonimusHomeScreenState extends State<AnonimusHomeScreen> {
   }
 }
 
+
 // class _PinnedHeaderDelegate extends SliverPersistentHeaderDelegate {
 //   final Widget child;
 //   final double height;
@@ -258,39 +359,3 @@ class _AnonimusHomeScreenState extends State<AnonimusHomeScreen> {
 //       true;
 // }
 
-class CategoryItem extends StatelessWidget {
-  final PlaceCategory category;
-  final void Function(PlaceCategory category)? onTap;
-
-  const CategoryItem({super.key, required this.category, this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      borderRadius: BorderRadius.circular(16),
-      onTap: () => onTap?.call(category),
-      child: Container(
-        decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.surface,
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: Colors.grey.shade300),
-        ),
-        padding: const EdgeInsets.all(10),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            FaIcon(category.icon, size: 28, color: category.color),
-            const SizedBox(height: 8),
-            Text(
-              category.name,
-              textAlign: TextAlign.center,
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-              style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 13),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
