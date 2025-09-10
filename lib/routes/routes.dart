@@ -9,6 +9,7 @@ import 'package:destino_quisquella_front/screens/itineraries/itinerariesScreen.d
 import 'package:destino_quisquella_front/screens/nearBy/nearByScreen.dart';
 import 'package:destino_quisquella_front/screens/places/placesByCategoryScreen/placesByCategoryScreen.dart';
 import 'package:destino_quisquella_front/screens/profile/profileScreen.dart';
+import 'package:destino_quisquella_front/screens/travelAgency/destinationsDetailsScreens/destinationsDetailsScreen.dart';
 import 'package:flutter/material.dart';
 
 final Map<String, WidgetBuilder> routes = {
@@ -22,6 +23,7 @@ final Map<String, WidgetBuilder> routes = {
   ItinerariesScreen.routeName: (context) => const ItinerariesScreen(),
   PlacesByCategoryScreen.routeName: (context) => const PlacesByCategoryScreen(),
   MostVisitedScreen.routeName: (context) => const MostVisitedScreen(),
+  // DestinationDetailScreen.routeName: (context) => const DestinationDetailScreen(),
 
   // Anonimus Screens
   AnonimusHomeScreen.routeName: (context) => const AnonimusHomeScreen(),

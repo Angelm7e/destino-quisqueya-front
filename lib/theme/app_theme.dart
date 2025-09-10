@@ -43,6 +43,7 @@ class AppTheme {
         borderRadius: BorderRadius.all(Radius.circular(12)),
       ),
     ),
+
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         backgroundColor: AppColors.lightPrimary,
@@ -51,6 +52,7 @@ class AppTheme {
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       ),
     ),
+    tabBarTheme: TabBarThemeData(dividerColor: Colors.transparent),
     iconTheme: const IconThemeData(color: AppColors.lightTextSecondary),
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
       backgroundColor: AppColors.lightPrimary,
@@ -101,6 +103,7 @@ class AppTheme {
       elevation: 0,
       centerTitle: true,
     ),
+    tabBarTheme: TabBarThemeData(dividerColor: Colors.transparent),
     cardTheme: const CardThemeData(
       color: AppColors.darkSurface,
       elevation: 2,
