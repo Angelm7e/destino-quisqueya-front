@@ -1,4 +1,4 @@
-import 'package:destino_quisquella_front/widgets/scaffold.widget.dart';
+import 'package:destino_quisqueya_front/widgets/scaffold.widget.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -16,9 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return DQScaffoldWidget(
       currentIndex: currentIndex,
-      body: Column(
-        children: [Text("Home screen")],
-      ),
+      body: Column(children: [Text("Home screen")]),
     );
   }
 }

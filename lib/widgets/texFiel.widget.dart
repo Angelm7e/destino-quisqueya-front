@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
 
 class DQTextField extends StatefulWidget {
-  const DQTextField(
-      {super.key,
-      required this.controller,
-      required this.hintText,
-      required this.labelText,
-      this.prefixIcon,
-      this.suffixIcon,
-      this.obscureText = false,
-      this.keyboardType = TextInputType.text});
+  const DQTextField({
+    super.key,
+    required this.controller,
+    required this.hintText,
+    required this.labelText,
+    this.prefixIcon,
+    this.suffixIcon,
+    this.obscureText = false,
+    this.keyboardType = TextInputType.text,
+  });
 
   final TextEditingController controller;
   final String hintText;
   final String labelText;
   final Icon? prefixIcon;
-  final Icon? suffixIcon;
+  final Widget? suffixIcon;
   final bool obscureText;
   final TextInputType keyboardType;
 
@@ -30,10 +31,9 @@ class _DQTextFieldState extends State<DQTextField> {
       obscureText: widget.obscureText,
       keyboardType: widget.keyboardType,
       controller: widget.controller,
+      hintLocales: [],
       decoration: InputDecoration(
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12.0),
-        ),
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0)),
         labelText: widget.labelText,
         hintText: widget.hintText,
         prefixIcon: widget.prefixIcon,

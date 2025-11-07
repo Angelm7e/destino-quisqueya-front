@@ -7,7 +7,7 @@
   "passwordLabel": "Contraseña",
   "passwordHint": "Digite su contraseña",
   "forgotPassword": "¿Olvido contraseña?",
-  "forgotEmail": "¿Olvido correo electrónico?",
+  "forgotEmail": "¿Olvido correo?",
   "loginButton": "Iniciar sesión",
   "noAccountPrompt": "Registrarse",
   "signUp": "Registrarse",
@@ -35,5 +35,10 @@
   "dicoverSubtitle": "Descubre las joyas ocultas de la República Dominicana",
   "welcome": "¡Bienvenido a Destino Quisquella!",
   "startJourney": "Comienza tu aventura hoy mismo",
-  "noNeedAccount": "Explorar sin cuenta"
+  "noNeedAccount": "Explorar sin cuenta",
+  "recoverPassWord": "Recuperar contraseña",
+  "identificationType": "Tipo de identificacion",
+  "register": "Registro",
+  "documentId": "Cédula",
+  "passport": "Pasaporte"
 }

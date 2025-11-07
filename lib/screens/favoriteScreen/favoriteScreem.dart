@@ -1,4 +1,4 @@
-import 'package:destino_quisquella_front/widgets/scaffold.widget.dart';
+import 'package:destino_quisqueya_front/widgets/scaffold.widget.dart';
 import 'package:flutter/material.dart';
 
 class FavoriteScreen extends StatefulWidget {
@@ -14,6 +14,8 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
   @override
   Widget build(BuildContext context) {
     return DQScaffoldWidget(
-        currentIndex: 2, body: Column(children: [Text("Favorite Screen")]));
+      currentIndex: 2,
+      body: Column(children: [Text("Favorite Screen")]),
+    );
   }
 }

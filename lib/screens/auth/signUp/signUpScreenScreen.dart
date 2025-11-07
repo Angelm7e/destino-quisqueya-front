@@ -1,7 +1,9 @@
-import 'package:destino_quisquella_front/utilites/constants.dart';
-import 'package:destino_quisquella_front/widgets/dropDonw.widget.dart';
-import 'package:destino_quisquella_front/widgets/texFiel.widget.dart';
+import 'package:destino_quisqueya_front/generated/l10n.dart';
+import 'package:destino_quisqueya_front/utilities/const/constants.dart';
+import 'package:destino_quisqueya_front/widgets/dropDonw.widget.dart';
+import 'package:destino_quisqueya_front/widgets/texFiel.widget.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -13,45 +15,57 @@ class SignUpScreen extends StatefulWidget {
 }
 
 class _SignUpScreenState extends State<SignUpScreen> {
-  String selectedIen = "Tipo de Identificación";
+  late String selectedIen = S.current.identificationType;
   TextEditingController nameController = TextEditingController();
+  String currentLocale = Intl.getCurrentLocale();
+  DocumentID? currentDoc;
+
+  // @override
+  // void initState() {
+  //   super.initState();
+
+  //   WidgetsBinding.instance.addPostFrameCallback((_) {
+  //     setState(() {
+  //       selectedIen = S.of(context).identificationType;
+  //     });
+  //   });
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-          // leading:
-          //     // Row(
-          //     //   children: [
-          //     // Icon(Icons.arrow_back, color: Colors.black),
-          //     Text(
-          //   "Regresar",
-          //   style: TextStyle(fontSize: 18.0),
-          // ),
-          //   ],
-          // ),
-          // title: const Text("Create Account"),
+      appBar: AppBar(title: Text(S.of(context).register)),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(
+            horizontal: horizontalPadding,
+            vertical: 10,
           ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: horizontalPadding),
-        child: Column(
-          children: [
-            DQDropDownWidget(
-                items: documentTypes,
+          child: Column(
+            spacing: 15,
+            children: [
+              DQDropDownWidget(
+                items: documentTypes.map((e) => e.name).toList(),
                 selectedItem: selectedIen,
                 onChanged: (value) {
                   setState(() {
                     selectedIen = value!;
-                    print(selectedIen);
+                    currentDoc = documentTypes.firstWhere(
+                      (e) => e.name == value,
+                    );
+                    print(currentDoc!.name);
+                    print(currentDoc!.id);
                   });
-                }),
-            SizedBox(height: 20),
-            DQTextField(
-              controller: nameController,
-              hintText: "hintText",
-              labelText: "labelText",
-            )
-            // Text("Create Account Screen")
-          ],
+                },
+              ),
+              DQTextField(
+                controller: nameController,
+                hintText: "labelText",
+                labelText: "labelText",
+              ),
+              Text(currentLocale),
+            ],
+          ),
         ),
       ),
     );

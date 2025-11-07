@@ -26,5 +26,19 @@
   "dontHaveAccount": "Don't have an account? ",
   "skip": "Skip",
   "next": "Next",
-  "getStarted": "Get Started"
+  "getStarted": "Get Started",
+  "discoverConectEnjoy": "Discover, Connect and Enjoy",
+  "discoverSubtitle": "Explore the best destinations in the Dominican Republic",
+  "explore": "Explore unique places near you",
+  "exploreSubtitle": "Find amazing places nearby and share your experiences",
+  "discover": "Discover the best destinations",
+  "dicoverSubtitle": "Uncover the hidden gems of the Dominican Republic",
+  "welcome": "Welcome to Destino Quisqueya!",
+  "startJourney": "Start your adventure today",
+  "noNeedAccount": "Explore without an account",
+  "recoverPassWord": "Recover password",
+  "identificationType": "Identification type",
+  "register": "Register",
+  "documentId": "DocumentId",
+  "passport": "Passport"
 }

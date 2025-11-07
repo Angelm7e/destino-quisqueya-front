@@ -1,4 +1,4 @@
-import 'package:destino_quisquella_front/utilites/app_colors.dart';
+import 'package:destino_quisqueya_front/utilities/const/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -20,34 +20,40 @@ class AppTypography {
 
   static final TextTheme lightTextTheme = TextTheme(
     displayLarge: TextStyle(
-        fontSize: 26,
-        fontWeight: FontWeight.bold,
-        color: AppColors.lightTextPrimary),
+      fontSize: 26,
+      fontWeight: FontWeight.bold,
+      color: AppColors.lightTextPrimary,
+    ),
     headlineMedium: TextStyle(
-        fontSize: 20,
-        fontWeight: FontWeight.w600,
-        color: AppColors.lightTextPrimary),
+      fontSize: 20,
+      fontWeight: FontWeight.w600,
+      color: AppColors.lightTextPrimary,
+    ),
     bodyLarge: TextStyle(
-        fontSize: 16,
-        fontWeight: FontWeight.normal,
-        color: AppColors.lightTextPrimary),
+      fontSize: 16,
+      fontWeight: FontWeight.normal,
+      color: AppColors.lightTextPrimary,
+    ),
     bodyMedium: TextStyle(fontSize: 16, color: AppColors.lightTextSecondary),
     labelSmall: TextStyle(fontSize: 12, color: AppColors.lightTextSecondary),
   ).apply(fontFamily: googleFontFamily);
 
   static final TextTheme darkTextTheme = TextTheme(
     displayLarge: TextStyle(
-        fontSize: 26,
-        fontWeight: FontWeight.bold,
-        color: AppColors.darkTextPrimary),
+      fontSize: 26,
+      fontWeight: FontWeight.bold,
+      color: AppColors.darkTextPrimary,
+    ),
     headlineMedium: TextStyle(
-        fontSize: 20,
-        fontWeight: FontWeight.w600,
-        color: AppColors.darkTextPrimary),
+      fontSize: 20,
+      fontWeight: FontWeight.w600,
+      color: AppColors.darkTextPrimary,
+    ),
     bodyLarge: TextStyle(
-        fontSize: 16,
-        fontWeight: FontWeight.normal,
-        color: AppColors.darkTextPrimary),
+      fontSize: 16,
+      fontWeight: FontWeight.normal,
+      color: AppColors.darkTextPrimary,
+    ),
     bodyMedium: TextStyle(fontSize: 14, color: AppColors.darkTextSecondary),
     labelSmall: TextStyle(fontSize: 12, color: AppColors.darkTextSecondary),
   ).apply(fontFamily: googleFontFamily);

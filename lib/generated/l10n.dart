@@ -18,20 +18,17 @@ class S {
   static S? _current;
 
   static S get current {
-    assert(
-      _current != null,
-      'No instance of S was loaded. Try to initialize the S delegate before accessing S.current.',
-    );
+    assert(_current != null,
+        'No instance of S was loaded. Try to initialize the S delegate before accessing S.current.');
     return _current!;
   }
 
   static const AppLocalizationDelegate delegate = AppLocalizationDelegate();
 
   static Future<S> load(Locale locale) {
-    final name =
-        (locale.countryCode?.isEmpty ?? false)
-            ? locale.languageCode
-            : locale.toString();
+    final name = (locale.countryCode?.isEmpty ?? false)
+        ? locale.languageCode
+        : locale.toString();
     final localeName = Intl.canonicalizedLocale(name);
     return initializeMessages(localeName).then((_) {
       Intl.defaultLocale = localeName;
@@ -44,10 +41,8 @@ class S {
 
   static S of(BuildContext context) {
     final instance = S.maybeOf(context);
-    assert(
-      instance != null,
-      'No instance of S present in the widget tree. Did you add S.delegate in localizationsDelegates?',
-    );
+    assert(instance != null,
+        'No instance of S present in the widget tree. Did you add S.delegate in localizationsDelegates?');
     return instance!;
   }
 
@@ -135,10 +130,10 @@ class S {
     );
   }
 
-  /// `¿Olvido correo electrónico?`
+  /// `¿Olvido correo?`
   String get forgotEmail {
     return Intl.message(
-      '¿Olvido correo electrónico?',
+      '¿Olvido correo?',
       name: 'forgotEmail',
       desc: '',
       args: [],
@@ -167,12 +162,22 @@ class S {
 
   /// `Registrarse`
   String get signUp {
-    return Intl.message('Registrarse', name: 'signUp', desc: '', args: []);
+    return Intl.message(
+      'Registrarse',
+      name: 'signUp',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Favoritos`
   String get favorites {
-    return Intl.message('Favoritos', name: 'favorites', desc: '', args: []);
+    return Intl.message(
+      'Favoritos',
+      name: 'favorites',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Configuraciones`
@@ -197,7 +202,12 @@ class S {
 
   /// `Cerrar sesión`
   String get logout {
-    return Intl.message('Cerrar sesión', name: 'logout', desc: '', args: []);
+    return Intl.message(
+      'Cerrar sesión',
+      name: 'logout',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `¿Está seguro que desea cerrar sesión?`
@@ -212,37 +222,72 @@ class S {
 
   /// `Confirmar`
   String get confirm {
-    return Intl.message('Confirmar', name: 'confirm', desc: '', args: []);
+    return Intl.message(
+      'Confirmar',
+      name: 'confirm',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Cancelar`
   String get cancel {
-    return Intl.message('Cancelar', name: 'cancel', desc: '', args: []);
+    return Intl.message(
+      'Cancelar',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Inicio`
   String get home {
-    return Intl.message('Inicio', name: 'home', desc: '', args: []);
+    return Intl.message(
+      'Inicio',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Buscar`
   String get search {
-    return Intl.message('Buscar', name: 'search', desc: '', args: []);
+    return Intl.message(
+      'Buscar',
+      name: 'search',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Perfil`
   String get profile {
-    return Intl.message('Perfil', name: 'profile', desc: '', args: []);
+    return Intl.message(
+      'Perfil',
+      name: 'profile',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Cerca de ti`
   String get closeToYou {
-    return Intl.message('Cerca de ti', name: 'closeToYou', desc: '', args: []);
+    return Intl.message(
+      'Cerca de ti',
+      name: 'closeToYou',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Mis Reviews`
   String get myReviews {
-    return Intl.message('Mis Reviews', name: 'myReviews', desc: '', args: []);
+    return Intl.message(
+      'Mis Reviews',
+      name: 'myReviews',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `¿No tienes una cuenta?`
@@ -257,17 +302,32 @@ class S {
 
   /// `Saltar`
   String get skip {
-    return Intl.message('Saltar', name: 'skip', desc: '', args: []);
+    return Intl.message(
+      'Saltar',
+      name: 'skip',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Siguiente`
   String get next {
-    return Intl.message('Siguiente', name: 'next', desc: '', args: []);
+    return Intl.message(
+      'Siguiente',
+      name: 'next',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Comenzar`
   String get getStarted {
-    return Intl.message('Comenzar', name: 'getStarted', desc: '', args: []);
+    return Intl.message(
+      'Comenzar',
+      name: 'getStarted',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Descubre, Conecta y Disfruta`
@@ -355,6 +415,56 @@ class S {
     return Intl.message(
       'Explorar sin cuenta',
       name: 'noNeedAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Recuperar contraseña`
+  String get recoverPassWord {
+    return Intl.message(
+      'Recuperar contraseña',
+      name: 'recoverPassWord',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tipo de identificacion`
+  String get identificationType {
+    return Intl.message(
+      'Tipo de identificacion',
+      name: 'identificationType',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Registro`
+  String get register {
+    return Intl.message(
+      'Registro',
+      name: 'register',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cédula`
+  String get documentId {
+    return Intl.message(
+      'Cédula',
+      name: 'documentId',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pasaporte`
+  String get passport {
+    return Intl.message(
+      'Pasaporte',
+      name: 'passport',
       desc: '',
       args: [],
     );

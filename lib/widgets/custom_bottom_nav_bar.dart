@@ -1,9 +1,9 @@
-import 'package:destino_quisquella_front/generated/l10n.dart';
-import 'package:destino_quisquella_front/screens/favoriteScreen/favoriteScreem.dart';
-import 'package:destino_quisquella_front/screens/home/homeScreen.dart';
-import 'package:destino_quisquella_front/screens/nearBy/nearByScreen.dart';
-import 'package:destino_quisquella_front/screens/profile/profileScreen.dart';
-import 'package:destino_quisquella_front/utilites/app_colors.dart';
+import 'package:destino_quisqueya_front/generated/l10n.dart';
+import 'package:destino_quisqueya_front/screens/favoriteScreen/favoriteScreem.dart';
+import 'package:destino_quisqueya_front/screens/home/homeScreen.dart';
+import 'package:destino_quisqueya_front/screens/nearBy/nearByScreen.dart';
+import 'package:destino_quisqueya_front/screens/profile/profileScreen.dart';
+import 'package:destino_quisqueya_front/utilities/const/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
@@ -33,41 +33,55 @@ class CustomBottomNavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          _buildNavItem(context,
-              icon: Icons.home,
-              label: S.of(context).home,
-              isActive: currentIndex == 0, onTap: () {
-            Navigator.pushNamed(context, HomeScreen.routeName);
-          }),
-          _buildNavItem(context,
-              icon: Icons.location_on,
-              label: S.of(context).closeToYou,
-              isActive: currentIndex == 1, onTap: () {
-            Navigator.pushNamed(context, NearByScreen.routeName);
-          }),
+          _buildNavItem(
+            context,
+            icon: Icons.home,
+            label: S.of(context).home,
+            isActive: currentIndex == 0,
+            onTap: () {
+              Navigator.pushNamed(context, HomeScreen.routeName);
+            },
+          ),
+          _buildNavItem(
+            context,
+            icon: Icons.location_on,
+            label: S.of(context).closeToYou,
+            isActive: currentIndex == 1,
+            onTap: () {
+              Navigator.pushNamed(context, NearByScreen.routeName);
+            },
+          ),
           const SizedBox(width: 48),
-          _buildNavItem(context,
-              icon: Icons.favorite,
-              label: S.of(context).favorites,
-              isActive: currentIndex == 2, onTap: () {
-            Navigator.pushNamed(context, FavoriteScreen.routeName);
-          }),
-          _buildNavItem(context,
-              icon: Icons.person,
-              label: S.of(context).profile,
-              isActive: currentIndex == 3, onTap: () {
-            Navigator.pushNamed(context, ProfileScreen.routeName);
-          })
+          _buildNavItem(
+            context,
+            icon: Icons.favorite,
+            label: S.of(context).favorites,
+            isActive: currentIndex == 2,
+            onTap: () {
+              Navigator.pushNamed(context, FavoriteScreen.routeName);
+            },
+          ),
+          _buildNavItem(
+            context,
+            icon: Icons.person,
+            label: S.of(context).profile,
+            isActive: currentIndex == 3,
+            onTap: () {
+              Navigator.pushNamed(context, ProfileScreen.routeName);
+            },
+          ),
         ],
       ),
     );
   }
 
-  Widget _buildNavItem(BuildContext context,
-      {required IconData icon,
-      required String label,
-      required bool isActive,
-      required VoidCallback onTap}) {
+  Widget _buildNavItem(
+    BuildContext context, {
+    required IconData icon,
+    required String label,
+    required bool isActive,
+    required VoidCallback onTap,
+  }) {
     Size base = MediaQuery.of(context).size;
     return FittedBox(
       child: GestureDetector(

@@ -1,4 +1,4 @@
-import 'package:destino_quisquella_front/utilites/app_colors.dart';
+import 'package:destino_quisqueya_front/utilities/const/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class DQDropDownWidget extends StatefulWidget {
@@ -67,10 +67,7 @@ class _DQDropDownWidgetState extends State<DQDropDownWidget>
     _slideAnimation = Tween<Offset>(
       begin: const Offset(0, -0.1),
       end: const Offset(0, 0),
-    ).animate(CurvedAnimation(
-      parent: _controller,
-      curve: Curves.easeInOut,
-    ));
+    ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
   }
 
   @override
@@ -93,8 +90,10 @@ class _DQDropDownWidgetState extends State<DQDropDownWidget>
     double screenHeight = MediaQuery.of(context).size.height;
     double spaceBelow = screenHeight - offset.dy - renderBox.size.height;
 
-    double dropdownHeight =
-        (widget.items.length * 50.0).clamp(50.0, spaceBelow);
+    double dropdownHeight = (widget.items.length * 50.0).clamp(
+      50.0,
+      spaceBelow,
+    );
 
     setState(() {
       isDropDownOpen = true;
@@ -147,9 +146,7 @@ class _DQDropDownWidgetState extends State<DQDropDownWidget>
                     position: _slideAnimation,
                     // Controlling max heigth for dropdown
                     child: ConstrainedBox(
-                      constraints: BoxConstraints(
-                        maxHeight: 200,
-                      ),
+                      constraints: BoxConstraints(maxHeight: 200),
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.white,
@@ -176,8 +173,9 @@ class _DQDropDownWidgetState extends State<DQDropDownWidget>
                           child: SingleChildScrollView(
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
-                              children:
-                                  widget.items.asMap().entries.map((entry) {
+                              children: widget.items.asMap().entries.map((
+                                entry,
+                              ) {
                                 int index = entry.key;
                                 String value = entry.value;
                                 return Column(
@@ -210,8 +208,9 @@ class _DQDropDownWidgetState extends State<DQDropDownWidget>
                                     ),
                                     if (index < widget.items.length - 1)
                                       const Divider(
-                                          color: AppColors.lightPrimary,
-                                          thickness: 1),
+                                        color: AppColors.lightPrimary,
+                                        thickness: 1,
+                                      ),
                                   ],
                                 );
                               }).toList(),
@@ -275,21 +274,27 @@ class _DQDropDownWidgetState extends State<DQDropDownWidget>
                     ),
                     TweenAnimationBuilder(
                       tween: Tween<double>(
-                          begin: 0, end: isDropDownOpen ? 0.5 : 0),
+                        begin: 0,
+                        end: isDropDownOpen ? 0.5 : 0,
+                      ),
                       duration: const Duration(milliseconds: 300),
                       builder: (context, double angle, child) {
                         return Transform.rotate(
                           angle: angle * 6.3,
                           child: isDropDownOpen
-                              ? const Icon(Icons.arrow_drop_down,
-                                  color: AppColors.lightPrimary)
-                              : const Icon(Icons.arrow_drop_down,
-                                  color: AppColors.lightSecondary),
+                              ? const Icon(
+                                  Icons.arrow_drop_down,
+                                  color: AppColors.lightPrimary,
+                                )
+                              : const Icon(
+                                  Icons.arrow_drop_down,
+                                  color: AppColors.lightSecondary,
+                                ),
                         );
                       },
                     ),
                   ],
-                )
+                ),
               ],
             ),
           ),

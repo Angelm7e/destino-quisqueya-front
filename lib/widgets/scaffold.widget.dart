@@ -1,11 +1,14 @@
-import 'package:destino_quisquella_front/screens/addPlacesScreen/addPlacesScreen.dart';
-import 'package:destino_quisquella_front/utilites/app_colors.dart';
-import 'package:destino_quisquella_front/widgets/custom_bottom_nav_bar.dart';
+import 'package:destino_quisqueya_front/screens/addPlacesScreen/addPlacesScreen.dart';
+import 'package:destino_quisqueya_front/utilities/const/app_colors.dart';
+import 'package:destino_quisqueya_front/widgets/custom_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 class DQScaffoldWidget extends StatefulWidget {
-  const DQScaffoldWidget(
-      {super.key, required this.currentIndex, required this.body});
+  const DQScaffoldWidget({
+    super.key,
+    required this.currentIndex,
+    required this.body,
+  });
   final int currentIndex;
   final Widget body;
 
@@ -37,10 +40,7 @@ class _DQScaffoldWidgetState extends State<DQScaffoldWidget> {
           Navigator.pushNamed(context, AddPlacesScreen.routeName);
         },
         backgroundColor: AppColors.lightPrimary,
-        child: const Icon(
-          Icons.add,
-          color: Colors.white,
-        ),
+        child: const Icon(Icons.add, color: Colors.white),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );

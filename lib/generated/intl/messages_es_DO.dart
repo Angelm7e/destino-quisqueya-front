@@ -22,70 +22,64 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-    "appTitle": MessageLookupByLibrary.simpleMessage("Destino Quisquella"),
-    "cancel": MessageLookupByLibrary.simpleMessage("Cancelar"),
-    "closeToYou": MessageLookupByLibrary.simpleMessage("Cerca de ti"),
-    "confirm": MessageLookupByLibrary.simpleMessage("Confirmar"),
-    "dicoverSubtitle": MessageLookupByLibrary.simpleMessage(
-      "Descubre las joyas ocultas de la República Dominicana",
-    ),
-    "discover": MessageLookupByLibrary.simpleMessage(
-      "Descubrelos mejores destinos",
-    ),
-    "discoverConectEnjoy": MessageLookupByLibrary.simpleMessage(
-      "Descubre, Conecta y Disfruta",
-    ),
-    "discoverSubtitle": MessageLookupByLibrary.simpleMessage(
-      "Explora los mejores destinos en la República Dominicana",
-    ),
-    "dontHaveAccount": MessageLookupByLibrary.simpleMessage(
-      "¿No tienes una cuenta?",
-    ),
-    "editProfile": MessageLookupByLibrary.simpleMessage("Editar perfil"),
-    "emailHint": MessageLookupByLibrary.simpleMessage("Correo electronico"),
-    "emailLabel": MessageLookupByLibrary.simpleMessage("Correo electronico"),
-    "explore": MessageLookupByLibrary.simpleMessage(
-      "Explora lugares unicos cerca de ti",
-    ),
-    "exploreSubtitle": MessageLookupByLibrary.simpleMessage(
-      "Encuentra lugares increibles cerca de ti y comparte tus experiencias",
-    ),
-    "favorites": MessageLookupByLibrary.simpleMessage("Favoritos"),
-    "forgotEmail": MessageLookupByLibrary.simpleMessage(
-      "¿Olvido correo electrónico?",
-    ),
-    "forgotPassword": MessageLookupByLibrary.simpleMessage(
-      "¿Olvido contraseña?",
-    ),
-    "getStarted": MessageLookupByLibrary.simpleMessage("Comenzar"),
-    "home": MessageLookupByLibrary.simpleMessage("Inicio"),
-    "loginButton": MessageLookupByLibrary.simpleMessage("Iniciar sesión"),
-    "loginSubtitle": MessageLookupByLibrary.simpleMessage("Destino Quisquella"),
-    "loginTitle": MessageLookupByLibrary.simpleMessage("iniciar sesión"),
-    "logout": MessageLookupByLibrary.simpleMessage("Cerrar sesión"),
-    "logoutConfirmation": MessageLookupByLibrary.simpleMessage(
-      "¿Está seguro que desea cerrar sesión?",
-    ),
-    "myReviews": MessageLookupByLibrary.simpleMessage("Mis Reviews"),
-    "next": MessageLookupByLibrary.simpleMessage("Siguiente"),
-    "noAccountPrompt": MessageLookupByLibrary.simpleMessage("Registrarse"),
-    "noNeedAccount": MessageLookupByLibrary.simpleMessage(
-      "Explorar sin cuenta",
-    ),
-    "passwordHint": MessageLookupByLibrary.simpleMessage(
-      "Digite su contraseña",
-    ),
-    "passwordLabel": MessageLookupByLibrary.simpleMessage("Contraseña"),
-    "profile": MessageLookupByLibrary.simpleMessage("Perfil"),
-    "search": MessageLookupByLibrary.simpleMessage("Buscar"),
-    "settings": MessageLookupByLibrary.simpleMessage("Configuraciones"),
-    "signUp": MessageLookupByLibrary.simpleMessage("Registrarse"),
-    "skip": MessageLookupByLibrary.simpleMessage("Saltar"),
-    "startJourney": MessageLookupByLibrary.simpleMessage(
-      "Comienza tu aventura hoy mismo",
-    ),
-    "welcome": MessageLookupByLibrary.simpleMessage(
-      "¡Bienvenido a Destino Quisquella!",
-    ),
-  };
+        "appTitle": MessageLookupByLibrary.simpleMessage("Destino Quisquella"),
+        "cancel": MessageLookupByLibrary.simpleMessage("Cancelar"),
+        "closeToYou": MessageLookupByLibrary.simpleMessage("Cerca de ti"),
+        "confirm": MessageLookupByLibrary.simpleMessage("Confirmar"),
+        "dicoverSubtitle": MessageLookupByLibrary.simpleMessage(
+            "Descubre las joyas ocultas de la República Dominicana"),
+        "discover": MessageLookupByLibrary.simpleMessage(
+            "Descubrelos mejores destinos"),
+        "discoverConectEnjoy": MessageLookupByLibrary.simpleMessage(
+            "Descubre, Conecta y Disfruta"),
+        "discoverSubtitle": MessageLookupByLibrary.simpleMessage(
+            "Explora los mejores destinos en la República Dominicana"),
+        "documentId": MessageLookupByLibrary.simpleMessage("Cédula"),
+        "dontHaveAccount":
+            MessageLookupByLibrary.simpleMessage("¿No tienes una cuenta?"),
+        "editProfile": MessageLookupByLibrary.simpleMessage("Editar perfil"),
+        "emailHint": MessageLookupByLibrary.simpleMessage("Correo electronico"),
+        "emailLabel":
+            MessageLookupByLibrary.simpleMessage("Correo electronico"),
+        "explore": MessageLookupByLibrary.simpleMessage(
+            "Explora lugares unicos cerca de ti"),
+        "exploreSubtitle": MessageLookupByLibrary.simpleMessage(
+            "Encuentra lugares increibles cerca de ti y comparte tus experiencias"),
+        "favorites": MessageLookupByLibrary.simpleMessage("Favoritos"),
+        "forgotEmail": MessageLookupByLibrary.simpleMessage("¿Olvido correo?"),
+        "forgotPassword":
+            MessageLookupByLibrary.simpleMessage("¿Olvido contraseña?"),
+        "getStarted": MessageLookupByLibrary.simpleMessage("Comenzar"),
+        "home": MessageLookupByLibrary.simpleMessage("Inicio"),
+        "identificationType":
+            MessageLookupByLibrary.simpleMessage("Tipo de identificacion"),
+        "loginButton": MessageLookupByLibrary.simpleMessage("Iniciar sesión"),
+        "loginSubtitle":
+            MessageLookupByLibrary.simpleMessage("Destino Quisquella"),
+        "loginTitle": MessageLookupByLibrary.simpleMessage("iniciar sesión"),
+        "logout": MessageLookupByLibrary.simpleMessage("Cerrar sesión"),
+        "logoutConfirmation": MessageLookupByLibrary.simpleMessage(
+            "¿Está seguro que desea cerrar sesión?"),
+        "myReviews": MessageLookupByLibrary.simpleMessage("Mis Reviews"),
+        "next": MessageLookupByLibrary.simpleMessage("Siguiente"),
+        "noAccountPrompt": MessageLookupByLibrary.simpleMessage("Registrarse"),
+        "noNeedAccount":
+            MessageLookupByLibrary.simpleMessage("Explorar sin cuenta"),
+        "passport": MessageLookupByLibrary.simpleMessage("Pasaporte"),
+        "passwordHint":
+            MessageLookupByLibrary.simpleMessage("Digite su contraseña"),
+        "passwordLabel": MessageLookupByLibrary.simpleMessage("Contraseña"),
+        "profile": MessageLookupByLibrary.simpleMessage("Perfil"),
+        "recoverPassWord":
+            MessageLookupByLibrary.simpleMessage("Recuperar contraseña"),
+        "register": MessageLookupByLibrary.simpleMessage("Registro"),
+        "search": MessageLookupByLibrary.simpleMessage("Buscar"),
+        "settings": MessageLookupByLibrary.simpleMessage("Configuraciones"),
+        "signUp": MessageLookupByLibrary.simpleMessage("Registrarse"),
+        "skip": MessageLookupByLibrary.simpleMessage("Saltar"),
+        "startJourney": MessageLookupByLibrary.simpleMessage(
+            "Comienza tu aventura hoy mismo"),
+        "welcome": MessageLookupByLibrary.simpleMessage(
+            "¡Bienvenido a Destino Quisquella!")
+      };
 }
