@@ -1,4 +1,4 @@
-# destino_quisquella_front
+# destino_quisqueya_front
 
 A new Flutter project.
 

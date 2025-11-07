@@ -1,13 +1,13 @@
 import 'package:animations/animations.dart';
-import 'package:destino_quisquella_front/anonimusFlow/mostVisited/mostVisitedScreen.dart';
-import 'package:destino_quisquella_front/screens/places/placeDetailsScreen/placeDetailScreen.dart';
-import 'package:destino_quisquella_front/screens/travelAgency/travelAgencyScreen/travelAgencyScreen.dart';
-import 'package:destino_quisquella_front/utilites/app_colors.dart';
-import 'package:destino_quisquella_front/utilites/dummyData/places.dart';
-import 'package:destino_quisquella_front/utilites/dummyData/travelAgency.dart';
-import 'package:destino_quisquella_front/widgets/categoryList.widget.dart';
-import 'package:destino_quisquella_front/widgets/headerCarousel.widget.dart';
-import 'package:destino_quisquella_front/widgets/placesCard.widget.dart';
+import 'package:destino_quisqueya_front/anonimusFlow/mostVisited/mostVisitedScreen.dart';
+import 'package:destino_quisqueya_front/screens/places/placeDetailsScreen/placeDetailScreen.dart';
+import 'package:destino_quisqueya_front/screens/travelAgency/travelAgencyScreen/travelAgencyScreen.dart';
+import 'package:destino_quisqueya_front/utilites/app_colors.dart';
+import 'package:destino_quisqueya_front/utilites/dummyData/places.dart';
+import 'package:destino_quisqueya_front/utilites/dummyData/travelAgency.dart';
+import 'package:destino_quisqueya_front/widgets/categoryList.widget.dart';
+import 'package:destino_quisqueya_front/widgets/headerCarousel.widget.dart';
+import 'package:destino_quisqueya_front/widgets/placesCard.widget.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 

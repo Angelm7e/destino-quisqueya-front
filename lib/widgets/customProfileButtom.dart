@@ -1,4 +1,4 @@
-import 'package:destino_quisquella_front/utilites/app_colors.dart';
+import 'package:destino_quisqueya_front/utilites/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomProfileButtom extends StatelessWidget {
@@ -27,18 +27,15 @@ class CustomProfileButtom extends StatelessWidget {
         ),
         child: Row(
           children: [
-            Icon(
-              icon,
-              size: 30,
-              color: AppColors.darkPrimary,
-            ),
+            Icon(icon, size: 30, color: AppColors.darkPrimary),
             SizedBox(width: 10),
             Text(
               label,
               style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: AppColors.darkPrimary),
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: AppColors.darkPrimary,
+              ),
             ),
             Spacer(),
             Icon(

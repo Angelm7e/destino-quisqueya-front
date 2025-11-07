@@ -1,8 +1,8 @@
-import 'package:destino_quisquella_front/generated/l10n.dart';
-import 'package:destino_quisquella_front/screens/auth/login/loginScreen.dart';
-import 'package:destino_quisquella_front/screens/onboardingScreen/introPage1.dart';
-import 'package:destino_quisquella_front/screens/onboardingScreen/introPage2.dart';
-import 'package:destino_quisquella_front/screens/onboardingScreen/introPage3.dart';
+import 'package:destino_quisqueya_front/generated/l10n.dart';
+import 'package:destino_quisqueya_front/screens/auth/login/loginScreen.dart';
+import 'package:destino_quisqueya_front/screens/onboardingScreen/introPage1.dart';
+import 'package:destino_quisqueya_front/screens/onboardingScreen/introPage2.dart';
+import 'package:destino_quisqueya_front/screens/onboardingScreen/introPage3.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 

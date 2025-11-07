@@ -1,4 +1,4 @@
-import 'package:destino_quisquella_front/generated/l10n.dart';
+import 'package:destino_quisqueya_front/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class Intropage1 extends StatelessWidget {
@@ -13,16 +13,17 @@ class Intropage1 extends StatelessWidget {
       bottom: false,
       child: Column(
         children: [
-          Image.asset(
-            "assets/landing/image1.png",
-          ),
+          Image.asset("assets/landing/image1.png"),
           Text(
             S.of(context).discoverConectEnjoy,
             style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 20),
-          Text(S.of(context).discoverSubtitle,
-              textAlign: TextAlign.center, style: TextStyle(fontSize: 20)),
+          Text(
+            S.of(context).discoverSubtitle,
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 20),
+          ),
         ],
       ),
     );

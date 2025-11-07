@@ -1,15 +1,15 @@
-import 'package:destino_quisquella_front/anonimusFlow/anonimusHome/anonimusHomeScreen.dart';
-import 'package:destino_quisquella_front/anonimusFlow/mostVisited/mostVisitedScreen.dart';
-import 'package:destino_quisquella_front/screens/addPlacesScreen/addPlacesScreen.dart';
-import 'package:destino_quisquella_front/screens/auth/login/loginScreen.dart';
-import 'package:destino_quisquella_front/screens/auth/signUp/signUpScreenScreen.dart';
-import 'package:destino_quisquella_front/screens/favoriteScreen/favoriteScreem.dart';
-import 'package:destino_quisquella_front/screens/home/homeScreen.dart';
-import 'package:destino_quisquella_front/screens/itineraries/itinerariesScreen.dart';
-import 'package:destino_quisquella_front/screens/nearBy/nearByScreen.dart';
-import 'package:destino_quisquella_front/screens/places/placesByCategoryScreen/placesByCategoryScreen.dart';
-import 'package:destino_quisquella_front/screens/profile/profileScreen.dart';
-import 'package:destino_quisquella_front/screens/travelAgency/destinationsDetailsScreens/destinationsDetailsScreen.dart';
+import 'package:destino_quisqueya_front/anonimusFlow/anonimusHome/anonimusHomeScreen.dart';
+import 'package:destino_quisqueya_front/anonimusFlow/mostVisited/mostVisitedScreen.dart';
+import 'package:destino_quisqueya_front/screens/addPlacesScreen/addPlacesScreen.dart';
+import 'package:destino_quisqueya_front/screens/auth/login/loginScreen.dart';
+import 'package:destino_quisqueya_front/screens/auth/signUp/signUpScreenScreen.dart';
+import 'package:destino_quisqueya_front/screens/favoriteScreen/favoriteScreem.dart';
+import 'package:destino_quisqueya_front/screens/home/homeScreen.dart';
+import 'package:destino_quisqueya_front/screens/itineraries/itinerariesScreen.dart';
+import 'package:destino_quisqueya_front/screens/nearBy/nearByScreen.dart';
+import 'package:destino_quisqueya_front/screens/places/placesByCategoryScreen/placesByCategoryScreen.dart';
+import 'package:destino_quisqueya_front/screens/profile/profileScreen.dart';
+import 'package:destino_quisqueya_front/screens/travelAgency/destinationsDetailsScreens/destinationsDetailsScreen.dart';
 import 'package:flutter/material.dart';
 
 final Map<String, WidgetBuilder> routes = {

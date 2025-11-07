@@ -1,6 +1,6 @@
-import 'package:destino_quisquella_front/screens/places/placesByCategoryScreen/placesByCategoryScreen.dart';
-import 'package:destino_quisquella_front/utilites/dummyData/category.dart';
-import 'package:destino_quisquella_front/widgets/categoryIten.widget.dart';
+import 'package:destino_quisqueya_front/screens/places/placesByCategoryScreen/placesByCategoryScreen.dart';
+import 'package:destino_quisqueya_front/utilites/dummyData/category.dart';
+import 'package:destino_quisqueya_front/widgets/categoryIten.widget.dart';
 import 'package:flutter/material.dart';
 
 class CategoryListWidget extends StatelessWidget {

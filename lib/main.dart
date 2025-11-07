@@ -1,9 +1,9 @@
-import 'package:destino_quisquella_front/generated/l10n.dart';
-import 'package:destino_quisquella_front/routes/routes.dart';
-import 'package:destino_quisquella_front/screens/auth/login/loginScreen.dart';
-import 'package:destino_quisquella_front/screens/onboardingScreen/onboardingScreen.dart';
-import 'package:destino_quisquella_front/theme/app_theme.dart';
-import 'package:destino_quisquella_front/utilites/utilitis.dart';
+import 'package:destino_quisqueya_front/generated/l10n.dart';
+import 'package:destino_quisqueya_front/routes/routes.dart';
+import 'package:destino_quisqueya_front/screens/auth/login/loginScreen.dart';
+import 'package:destino_quisqueya_front/screens/onboardingScreen/onboardingScreen.dart';
+import 'package:destino_quisqueya_front/theme/app_theme.dart';
+import 'package:destino_quisqueya_front/utilites/utilitis.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -25,8 +25,7 @@ class MyApp extends StatelessWidget {
   Widget initialPage() {
     return FutureBuilder<SharedPreferences>(
       future: SharedPreferences.getInstance(),
-      builder:
-          (BuildContext context, AsyncSnapshot<SharedPreferences> snapshot) {
+      builder: (BuildContext context, AsyncSnapshot<SharedPreferences> snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
           // Mientras se carga SharedPreferences, muestra una pantalla de carga
           return const CircularProgressIndicator();

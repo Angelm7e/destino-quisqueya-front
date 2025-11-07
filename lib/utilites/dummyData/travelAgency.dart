@@ -1,4 +1,4 @@
-import 'package:destino_quisquella_front/models/agency.model.dart';
+import 'package:destino_quisqueya_front/models/agency.model.dart';
 
 final List<TravelAgency> demoAgency = [
   TravelAgency(

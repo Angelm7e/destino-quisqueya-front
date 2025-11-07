@@ -1,10 +1,10 @@
 // screens/travel_agency_detail.screen.dart
 import 'package:animations/animations.dart';
-import 'package:destino_quisquella_front/models/agency.model.dart';
-import 'package:destino_quisquella_front/screens/travelAgency/destinationsDetailsScreens/destinationsDetailsScreen.dart';
-import 'package:destino_quisquella_front/utilites/app_colors.dart';
-import 'package:destino_quisquella_front/utilites/dummyData/travelAgency.dart';
-import 'package:destino_quisquella_front/widgets/headerCarousel.widget.dart';
+import 'package:destino_quisqueya_front/models/agency.model.dart';
+import 'package:destino_quisqueya_front/screens/travelAgency/destinationsDetailsScreens/destinationsDetailsScreen.dart';
+import 'package:destino_quisqueya_front/utilites/app_colors.dart';
+import 'package:destino_quisqueya_front/utilites/dummyData/travelAgency.dart';
+import 'package:destino_quisqueya_front/widgets/headerCarousel.widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';

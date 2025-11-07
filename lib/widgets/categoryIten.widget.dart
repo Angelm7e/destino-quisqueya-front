@@ -1,4 +1,4 @@
-import 'package:destino_quisquella_front/models/category.model.dart';
+import 'package:destino_quisqueya_front/models/category.model.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 

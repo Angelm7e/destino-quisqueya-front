@@ -1,4 +1,4 @@
-import 'package:destino_quisquella_front/generated/l10n.dart';
+import 'package:destino_quisqueya_front/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class Intropage3 extends StatelessWidget {
@@ -20,13 +20,18 @@ class Intropage3 extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           SizedBox(height: 20),
-          Text(S.of(context).dicoverSubtitle,
-              textAlign: TextAlign.center, style: TextStyle(fontSize: 20)),
+          Text(
+            S.of(context).dicoverSubtitle,
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 20),
+          ),
           SizedBox(height: 20),
           // "¡Comienza a explorar!"
-          Text(S.of(context).startJourney,
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+          Text(
+            S.of(context).startJourney,
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+          ),
         ],
       ),
     );

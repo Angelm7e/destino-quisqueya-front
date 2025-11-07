@@ -1,4 +1,4 @@
-import 'package:destino_quisquella_front/widgets/scaffold.widget.dart';
+import 'package:destino_quisqueya_front/widgets/scaffold.widget.dart';
 import 'package:flutter/material.dart';
 
 class AddPlacesScreen extends StatefulWidget {
@@ -14,9 +14,8 @@ class _AddPlacesScreenState extends State<AddPlacesScreen> {
   @override
   Widget build(BuildContext context) {
     return DQScaffoldWidget(
-        currentIndex: 5,
-        body: Column(
-          children: [Text("Add Places Screen")],
-        ));
+      currentIndex: 5,
+      body: Column(children: [Text("Add Places Screen")]),
+    );
   }
 }

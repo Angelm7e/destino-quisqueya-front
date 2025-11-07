@@ -1,5 +1,5 @@
 // data/destination_detail_dummy.dart
-import 'package:destino_quisquella_front/models/destinationDetail.model.dart';
+import 'package:destino_quisqueya_front/models/destinationDetail.model.dart';
 
 final List<DestinationDetail> destinationDetails = [
   DestinationDetail(

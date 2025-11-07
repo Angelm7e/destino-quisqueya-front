@@ -1,5 +1,5 @@
 // data/places_dummy.dart
-import 'package:destino_quisquella_front/models/destiny.model.dart';
+import 'package:destino_quisqueya_front/models/destiny.model.dart';
 
 final List<Place> placesDummy = [
   Place(

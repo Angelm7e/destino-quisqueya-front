@@ -1,6 +1,6 @@
-import 'package:destino_quisquella_front/utilites/constants.dart';
-import 'package:destino_quisquella_front/widgets/dropDonw.widget.dart';
-import 'package:destino_quisquella_front/widgets/texFiel.widget.dart';
+import 'package:destino_quisqueya_front/utilites/constants.dart';
+import 'package:destino_quisqueya_front/widgets/dropDonw.widget.dart';
+import 'package:destino_quisqueya_front/widgets/texFiel.widget.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatefulWidget {

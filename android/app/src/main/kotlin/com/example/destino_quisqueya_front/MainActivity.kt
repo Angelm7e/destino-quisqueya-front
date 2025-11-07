@@ -1,4 +1,4 @@
-package com.example.destino_quisquella_front
+package com.example.destino_quisqueya_front
 
 import io.flutter.embedding.android.FlutterActivity
 

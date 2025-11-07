@@ -1,6 +1,6 @@
-import 'package:destino_quisquella_front/models/destiny.model.dart';
-import 'package:destino_quisquella_front/utilites/app_colors.dart';
-import 'package:destino_quisquella_front/widgets/headerCarousel.widget.dart';
+import 'package:destino_quisqueya_front/models/destiny.model.dart';
+import 'package:destino_quisqueya_front/utilites/app_colors.dart';
+import 'package:destino_quisqueya_front/widgets/headerCarousel.widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';

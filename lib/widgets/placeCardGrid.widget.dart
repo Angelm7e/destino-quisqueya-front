@@ -1,4 +1,4 @@
-import 'package:destino_quisquella_front/models/destiny.model.dart';
+import 'package:destino_quisqueya_front/models/destiny.model.dart';
 import 'package:flutter/material.dart';
 
 class PlaceCardGridWidget extends StatelessWidget {

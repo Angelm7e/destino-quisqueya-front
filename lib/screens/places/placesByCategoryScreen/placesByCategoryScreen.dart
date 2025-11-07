@@ -1,9 +1,9 @@
 import 'package:animations/animations.dart';
-import 'package:destino_quisquella_front/models/category.model.dart';
-import 'package:destino_quisquella_front/models/destiny.model.dart';
-import 'package:destino_quisquella_front/screens/places/placeDetailsScreen/placeDetailScreen.dart';
-import 'package:destino_quisquella_front/utilites/dummyData/places.dart';
-import 'package:destino_quisquella_front/widgets/placeCardGrid.widget.dart';
+import 'package:destino_quisqueya_front/models/category.model.dart';
+import 'package:destino_quisqueya_front/models/destiny.model.dart';
+import 'package:destino_quisqueya_front/screens/places/placeDetailsScreen/placeDetailScreen.dart';
+import 'package:destino_quisqueya_front/utilites/dummyData/places.dart';
+import 'package:destino_quisqueya_front/widgets/placeCardGrid.widget.dart';
 import 'package:flutter/material.dart';
 
 class PlacesByCategoryScreen extends StatefulWidget {
