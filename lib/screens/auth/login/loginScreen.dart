@@ -6,7 +6,7 @@ import 'package:destino_quisqueya_front/screens/auth/signUp/signUpScreenScreen.d
 import 'package:destino_quisqueya_front/screens/home/homeScreen.dart';
 import 'package:destino_quisqueya_front/utilities/const/constants.dart';
 import 'package:destino_quisqueya_front/widgets/buttom.widget.dart';
-import 'package:destino_quisqueya_front/widgets/texFiel.widget.dart';
+import 'package:destino_quisqueya_front/widgets/texField.widget.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {

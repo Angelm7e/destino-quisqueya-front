@@ -1,12 +1,15 @@
 import 'package:destino_quisqueya_front/generated/l10n.dart';
+import 'package:destino_quisqueya_front/providers/authProvider.dart';
 import 'package:destino_quisqueya_front/routes/routes.dart';
 import 'package:destino_quisqueya_front/screens/auth/login/loginScreen.dart';
 import 'package:destino_quisqueya_front/screens/onboardingScreen/onboardingScreen.dart';
+import 'package:destino_quisqueya_front/services/authService.dart';
 import 'package:destino_quisqueya_front/theme/app_theme.dart';
 import 'package:destino_quisqueya_front/utilities/utilitis.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 // import 'package:flutter_intl_example/generated/l10n.dart';
 
@@ -56,21 +59,28 @@ class MyApp extends StatelessWidget {
           FocusManager.instance.primaryFocus?.unfocus();
         }
       },
-      child: MaterialApp(
-        routes: routes,
-        debugShowCheckedModeBanner: false,
-        theme: AppTheme.lightTheme,
-        darkTheme: AppTheme.darkTheme,
-        themeMode: ThemeMode.system,
-        // LocalizationsDelegate this is the configuration part for i18n
-        localizationsDelegates: const [
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-          GlobalCupertinoLocalizations.delegate,
-          S.delegate,
+      child: MultiProvider(
+        providers: [
+          ChangeNotifierProvider(
+            create: (context) => Authprovider(AuthService()),
+          ),
         ],
-        supportedLocales: S.delegate.supportedLocales,
-        home: initialPage(),
+        child: MaterialApp(
+          routes: routes,
+          debugShowCheckedModeBanner: false,
+          theme: AppTheme.lightTheme,
+          darkTheme: AppTheme.darkTheme,
+          themeMode: ThemeMode.system,
+          // LocalizationsDelegate this is the configuration part for i18n
+          localizationsDelegates: const [
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+            S.delegate,
+          ],
+          supportedLocales: S.delegate.supportedLocales,
+          home: initialPage(),
+        ),
       ),
     );
   }

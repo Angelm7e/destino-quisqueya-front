@@ -1,9 +1,15 @@
 import 'package:destino_quisqueya_front/generated/l10n.dart';
+import 'package:destino_quisqueya_front/models/authModels/dominicanPerson.dart';
+import 'package:destino_quisqueya_front/providers/authProvider.dart';
+import 'package:destino_quisqueya_front/utilities/const/app_colors.dart';
 import 'package:destino_quisqueya_front/utilities/const/constants.dart';
+import 'package:destino_quisqueya_front/widgets/buttom.widget.dart';
+import 'package:destino_quisqueya_front/widgets/dialog/loadingDialog.dart';
 import 'package:destino_quisqueya_front/widgets/dropDonw.widget.dart';
-import 'package:destino_quisqueya_front/widgets/texFiel.widget.dart';
+import 'package:destino_quisqueya_front/widgets/texField.widget.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:provider/provider.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -15,28 +21,59 @@ class SignUpScreen extends StatefulWidget {
 }
 
 class _SignUpScreenState extends State<SignUpScreen> {
-  late String selectedIen = S.current.identificationType;
+  late String selectedIen = S.current.documentId;
   TextEditingController nameController = TextEditingController();
+  TextEditingController lastNameController = TextEditingController();
+  TextEditingController idController = TextEditingController();
+  TextEditingController dateOfBirthController = TextEditingController();
+  TextEditingController passPortController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passWordController = TextEditingController();
+  TextEditingController confirmPassWordController = TextEditingController();
   String currentLocale = Intl.getCurrentLocale();
-  DocumentID? currentDoc;
+  DocumentID currentDoc = DocumentID(id: 1, name: S.current.documentId);
+  late Authprovider? serv;
+  late DominicanPerson? persona;
 
-  // @override
-  // void initState() {
-  //   super.initState();
+  getPersonByCedula(String cedula) async {
+    serv = Provider.of<Authprovider>(context, listen: false);
+    try {
+      showDialog(
+        barrierDismissible: false,
+        context: context,
+        builder: (context) =>
+            LoadingDialog(label: "Cargando informacion de la cedula $cedula"),
+      );
+      persona = await serv!.getPersonByCedula(cedula);
+      nameController.text = persona!.nombres!;
+      lastNameController.text = "${persona!.apellido1!} ${persona!.apellido2!}";
+      dateOfBirthController.text = persona!.fechaNacimiento!.split(' ')[0];
+      Navigator.pop(context);
 
-  //   WidgetsBinding.instance.addPostFrameCallback((_) {
-  //     setState(() {
-  //       selectedIen = S.of(context).identificationType;
-  //     });
-  //   });
-  // }
+      final snackBar = SnackBar(
+        content: Text(
+          "Validacion completada exitosamente, se cargo la informacion de ${persona!.nombres}",
+        ),
+        action: SnackBarAction(
+          label: 'Deshacer',
+          onPressed: () {
+            // Some code to undo the change.
+          },
+        ),
+      );
+      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+    } catch (e) {
+      Navigator.pop(context);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: true,
       appBar: AppBar(title: Text(S.of(context).register)),
-      body: SingleChildScrollView(
-        child: Padding(
+      body: SafeArea(
+        child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(
             horizontal: horizontalPadding,
             vertical: 10,
@@ -53,19 +90,73 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     currentDoc = documentTypes.firstWhere(
                       (e) => e.name == value,
                     );
-                    print(currentDoc!.name);
-                    print(currentDoc!.id);
+                    print(currentDoc.name);
+                    print(currentDoc.id);
                   });
                 },
               ),
+              currentDoc.id == 1
+                  ? DQTextField(
+                      onChanged: (value) {
+                        if (value.length >= 11 && currentDoc.id == 1) {
+                          getPersonByCedula("40226547350");
+                        }
+                      },
+                      controller: idController,
+                      hintText: S.current.documentId,
+                      labelText: S.current.documentId,
+                    )
+                  : DQTextField(
+                      controller: passPortController,
+                      hintText: S.current.passport,
+                      labelText: S.current.passport,
+                    ),
               DQTextField(
                 controller: nameController,
-                hintText: "labelText",
-                labelText: "labelText",
+                hintText: "Nombre",
+                labelText: "Nombre",
               ),
-              Text(currentLocale),
+              DQTextField(
+                controller: lastNameController,
+                hintText: "Apellido",
+                labelText: "Apellido",
+              ),
+              DQTextField(
+                controller: dateOfBirthController,
+                hintText: "fecha de nacimiento",
+                labelText: "fecha de nacimiento",
+              ),
+              DQTextField(
+                controller: nameController,
+                hintText: "numero de telefono",
+                labelText: "numero de telefono",
+              ),
+              DQTextField(
+                controller: emailController,
+                hintText: "Correo",
+                labelText: "Correo",
+              ),
+              DQTextField(
+                controller: passWordController,
+                hintText: "Password",
+                labelText: "Password",
+              ),
+              DQTextField(
+                controller: confirmPassWordController,
+                hintText: "confirm password",
+                labelText: "confirm password",
+              ),
             ],
           ),
+        ),
+      ),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.all(horizontalPadding),
+        child: DQButtom(
+          onTap: () {
+            getPersonByCedula("40226547350");
+          },
+          labeltext: "Registrarse",
         ),
       ),
     );

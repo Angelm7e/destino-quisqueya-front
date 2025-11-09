@@ -8,7 +8,18 @@ class AppTheme {
     brightness: Brightness.light,
     primaryColor: AppColors.lightPrimary,
     scaffoldBackgroundColor: AppColors.lightBackground,
-
+    dialogTheme: DialogThemeData(
+      alignment: Alignment.center, // Centra todos los diálogos
+      backgroundColor: AppColors.lightSurface,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+      titleTextStyle: const TextStyle(
+        fontSize: 22,
+        fontWeight: FontWeight.bold,
+        color: AppColors.lightPrimary,
+      ),
+      contentTextStyle: const TextStyle(fontSize: 16, color: Colors.black87),
+      elevation: 8,
+    ),
     colorScheme: ColorScheme.fromSeed(
       seedColor: AppColors.lightPrimary,
       brightness: Brightness.light,

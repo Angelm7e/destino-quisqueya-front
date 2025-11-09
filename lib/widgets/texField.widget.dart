@@ -10,6 +10,7 @@ class DQTextField extends StatefulWidget {
     this.suffixIcon,
     this.obscureText = false,
     this.keyboardType = TextInputType.text,
+    this.onChanged,
   });
 
   final TextEditingController controller;
@@ -19,6 +20,7 @@ class DQTextField extends StatefulWidget {
   final Widget? suffixIcon;
   final bool obscureText;
   final TextInputType keyboardType;
+  final Function(String)? onChanged;
 
   @override
   State<DQTextField> createState() => _DQTextFieldState();
@@ -28,6 +30,7 @@ class _DQTextFieldState extends State<DQTextField> {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      onChanged: widget.onChanged,
       obscureText: widget.obscureText,
       keyboardType: widget.keyboardType,
       controller: widget.controller,

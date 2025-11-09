@@ -92,7 +92,7 @@ class PlaceDetailScreen extends StatelessWidget {
 
           // 🔹 Descripción
           SliverToBoxAdapter(
-            child: _SectionCard(
+            child: SectionCard(
               title: 'Descripción',
               child: Text(
                 place.description,
@@ -103,7 +103,7 @@ class PlaceDetailScreen extends StatelessWidget {
 
           // 🔹 Galería
           SliverToBoxAdapter(
-            child: _SectionCard(
+            child: SectionCard(
               title: 'Galería de fotos',
               child: SizedBox(
                 height: 90,
@@ -125,7 +125,7 @@ class PlaceDetailScreen extends StatelessWidget {
           ),
           // 🔹 Ubicación
           SliverToBoxAdapter(
-            child: _SectionCard(
+            child: SectionCard(
               title: 'Ubicación',
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -170,19 +170,19 @@ class PlaceDetailScreen extends StatelessWidget {
 
           // 🔹 Información útil
           SliverToBoxAdapter(
-            child: _SectionCard(
+            child: SectionCard(
               title: 'Información útil',
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  _InfoRow(icon: Icons.map, text: place.info.howToGet),
+                  InfoRow(icon: Icons.map, text: place.info.howToGet),
                   if (place.info.recommendedHours != null)
-                    _InfoRow(
+                    InfoRow(
                       icon: Icons.access_time,
                       text: place.info.recommendedHours!,
                     ),
                   if (place.info.entryFee != null)
-                    _InfoRow(
+                    InfoRow(
                       icon: Icons.monetization_on,
                       text: place.info.entryFee!,
                     ),
@@ -269,10 +269,10 @@ class PlaceDetailScreen extends StatelessWidget {
 
 // 🔸 Componentes reutilizables
 
-class _SectionCard extends StatelessWidget {
+class SectionCard extends StatelessWidget {
   final String title;
   final Widget child;
-  const _SectionCard({required this.title, required this.child});
+  const SectionCard({super.key, required this.title, required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -299,10 +299,10 @@ class _SectionCard extends StatelessWidget {
   }
 }
 
-class _InfoRow extends StatelessWidget {
+class InfoRow extends StatelessWidget {
   final IconData icon;
   final String text;
-  const _InfoRow({required this.icon, required this.text});
+  const InfoRow({super.key, required this.icon, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -319,10 +319,11 @@ class _InfoRow extends StatelessWidget {
   }
 }
 
-class _ActionButton extends StatelessWidget {
+class ActionButton extends StatelessWidget {
   final IconData icon;
   final String label;
-  const _ActionButton({required this.icon, required this.label});
+
+  const ActionButton({super.key, required this.icon, required this.label});
 
   @override
   Widget build(BuildContext context) {
