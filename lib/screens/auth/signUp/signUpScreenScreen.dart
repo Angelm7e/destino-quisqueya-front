@@ -1,11 +1,13 @@
 import 'package:destino_quisqueya_front/generated/l10n.dart';
 import 'package:destino_quisqueya_front/models/authModels/dominicanPerson.dart';
 import 'package:destino_quisqueya_front/providers/authProvider.dart';
+import 'package:destino_quisqueya_front/screens/auth/signUp/flagTest.dart';
 import 'package:destino_quisqueya_front/utilities/const/constants.dart';
 import 'package:destino_quisqueya_front/widgets/buttom.widget.dart';
 import 'package:destino_quisqueya_front/widgets/dialog/loadingDialog.dart';
 import 'package:destino_quisqueya_front/widgets/dropDonw.widget.dart';
 import 'package:destino_quisqueya_front/widgets/genderSelector.widget.dart';
+import 'package:destino_quisqueya_front/widgets/nationalitySelector.widget.dart';
 import 'package:destino_quisqueya_front/widgets/texField.widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_flag_selector/flutter_flag_selector.dart';
@@ -38,6 +40,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   late Authprovider? serv;
   late DominicanPerson? persona;
   String? selectedGender;
+  String? selectedNationality;
 
   getPersonByCedula(String cedula) async {
     serv = Provider.of<Authprovider>(context, listen: false);
@@ -148,11 +151,33 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 },
                 labelText: "Género",
               ),
-
-              FlagSelector(
-                onFlagSelectorCountryChanged: (country) {
-                  print('Selected country: ${country.name}');
+              // FlagSelector(
+              //   onFlagSelectorCountryChanged: (country) {
+              //     print('Selected country: ${country.name}');
+              //     setState(() {
+              //       // selectedNationality = country.code;
+              //     });
+              //   },
+              //   flagSelectorLanguageCode: "es",
+              //   // flagSelectorCountries: NationalitySelectorWidget.countries,
+              //   flagSelectorInitialCountry: selectedNationality,
+              //   // flagSelectorOptionType: FlagSelectorOptionType.full,
+              // ),
+              // Selector de nacionalidad
+              NationalitySelectorWidget(
+                selectedCountryCode: selectedNationality,
+                onChanged: (value) {
+                  setState(() {
+                    selectedNationality = value;
+                  });
+                  print('Selected country code: $value');
+                  if (value != null) {
+                    print(
+                      'Selected country name: ${NationalitySelectorWidget.getCountryName(value)}',
+                    );
+                  }
                 },
+                labelText: "Nacionalidad",
               ),
               DQTextField(
                 controller: phoneController,
@@ -174,6 +199,24 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 hintText: "confirm password",
                 labelText: "confirm password",
               ),
+              ElevatedButton(
+                onPressed: () {
+                  // getPersonByCedula("40226547350");
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => TestApp()),
+                  );
+                },
+                child: Text("data"),
+              ),
+              // DQButtom(
+              //   onTap: () {
+              //     Navigator.push(
+              //       context,
+              //     );
+              //   },
+              //   labeltext: "Label",
+              // ),
             ],
           ),
         ),
@@ -182,7 +225,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
         padding: const EdgeInsets.all(horizontalPadding),
         child: DQButtom(
           onTap: () {
-            getPersonByCedula("40226547350");
+            // getPersonByCedula("40226547350");
+            MaterialPageRoute(builder: (context) => TestApp());
           },
           labeltext: "Registrarse",
         ),

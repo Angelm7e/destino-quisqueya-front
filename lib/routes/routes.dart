@@ -4,6 +4,7 @@ import 'package:destino_quisqueya_front/screens/addPlacesScreen/addPlacesScreen.
 import 'package:destino_quisqueya_front/screens/auth/forGotEmail/forgotEmailScreen.dart';
 import 'package:destino_quisqueya_front/screens/auth/forgotPassword/forgotPasswordScreen.dart';
 import 'package:destino_quisqueya_front/screens/auth/login/loginScreen.dart';
+import 'package:destino_quisqueya_front/screens/auth/signUp/flagTest.dart';
 import 'package:destino_quisqueya_front/screens/auth/signUp/signUpScreenScreen.dart';
 import 'package:destino_quisqueya_front/screens/favoriteScreen/favoriteScreem.dart';
 import 'package:destino_quisqueya_front/screens/home/homeScreen.dart';
@@ -28,6 +29,7 @@ final Map<String, WidgetBuilder> routes = {
   // DestinationDetailScreen.routeName: (context) => const DestinationDetailScreen(),
   ForgotPasswordScreen.routeName: (context) => ForgotPasswordScreen(),
   ForgotEmailScreen.routeName: (context) => ForgotEmailScreen(),
+  TestApp.routeName: (context) => TestApp(),
 
   // Anonimus Screens
   AnonimusHomeScreen.routeName: (context) => const AnonimusHomeScreen(),
