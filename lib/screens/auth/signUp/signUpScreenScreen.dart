@@ -199,16 +199,16 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 hintText: "confirm password",
                 labelText: "confirm password",
               ),
-              ElevatedButton(
-                onPressed: () {
-                  // getPersonByCedula("40226547350");
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => TestApp()),
-                  );
-                },
-                child: Text("data"),
-              ),
+              // ElevatedButton(
+              //   onPressed: () {
+              //     // getPersonByCedula("40226547350");
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => TestApp()),
+              //     );
+              //   },
+              //   child: Text("data"),
+              // ),
               // DQButtom(
               //   onTap: () {
               //     Navigator.push(

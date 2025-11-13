@@ -74,6 +74,13 @@ class AppTheme {
     textTheme: AppTypography.lightTextTheme,
     fontFamily: AppTypography.googleFontFamily,
     useMaterial3: true,
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        shape: const StadiumBorder(),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        side: BorderSide(color: AppColors.lightPrimary),
+      ),
+    ),
     bottomAppBarTheme: BottomAppBarThemeData(color: AppColors.lightSurface),
     // inputDecorationTheme: const InputDecorationTheme(
     //   border: OutlineInputBorder(
@@ -116,6 +123,12 @@ class AppTheme {
       elevation: 0,
       centerTitle: true,
     ),
+    sliderTheme: SliderThemeData(
+      valueIndicatorTextStyle: const TextStyle(
+        color: Colors.white,
+        // fontWeight: FontWeight.bold,
+      ),
+    ),
     tabBarTheme: TabBarThemeData(dividerColor: Colors.transparent),
     cardTheme: const CardThemeData(
       color: AppColors.darkSurface,
@@ -123,6 +136,14 @@ class AppTheme {
       margin: EdgeInsets.all(8),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.all(Radius.circular(12)),
+      ),
+    ),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        foregroundColor: Colors.white,
+        shape: const StadiumBorder(),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        side: BorderSide(color: AppColors.darkPrimary),
       ),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(

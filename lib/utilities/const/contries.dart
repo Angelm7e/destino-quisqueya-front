@@ -307,7 +307,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Armenian Dram',
     // emoji: '🇦🇲',
     // timezones: ['UTC+04:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Armenia',
       'ru': 'Армения',
@@ -373,13 +373,13 @@ const List<Country> defaultCountries = [
     // currencyName: 'Australian Dollar',
     // emoji: '🇦🇺',
     // timezones: [
-      'UTC+08:00',
-      'UTC+09:30',
-      'UTC+10:00',
-      'UTC+10:30',
-      'UTC+11:00',
-    ],
-    region: 'Oceania',
+    //   'UTC+08:00',
+    //   'UTC+09:30',
+    //   'UTC+10:00',
+    //   'UTC+10:30',
+    //   'UTC+11:00',
+    // ],
+    // region: 'Oceania',
     translations: {
       'en': 'Australia',
       'ru': 'Австралия',
@@ -412,7 +412,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇦🇹',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Austria',
       'ru': 'Австрия',
@@ -445,7 +445,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Azerbaijani Manat',
     // emoji: '🇦🇿',
     // timezones: ['UTC+04:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Azerbaijan',
       'ru': 'Азербайджан',
@@ -511,7 +511,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Bahraini Dinar',
     // emoji: '🇧🇭',
     // timezones: ['UTC+03:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Bahrain',
       'ru': 'Бахрейн',
@@ -544,7 +544,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Bangladeshi Taka',
     // emoji: '🇧🇩',
     // timezones: ['UTC+06:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Bangladesh',
       'ru': 'Бангладеш',
@@ -610,7 +610,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Belarusian Ruble',
     // emoji: '🇧🇾',
     // timezones: ['UTC+03:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Belarus',
       'ru': 'Беларусь',
@@ -643,7 +643,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇧🇪',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Belgium',
       'ru': 'Бельгия',
@@ -709,7 +709,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'West African CFA Franc',
     // emoji: '🇧🇯',
     // timezones: ['UTC+01:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Benin',
       'ru': 'Бенин',
@@ -775,7 +775,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Bhutanese Ngultrum',
     // emoji: '🇧🇹',
     // timezones: ['UTC+06:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Bhutan',
       'ru': 'Бутан',
@@ -841,7 +841,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Bosnia-Herzegovina Convertible Mark',
     // emoji: '🇧🇦',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Bosnia and Herzegovina',
       'ru': 'Босния и Герцеговина',
@@ -874,7 +874,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Botswana Pula',
     // emoji: '🇧🇼',
     // timezones: ['UTC+02:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Botswana',
       'ru': 'Ботсвана',
@@ -940,7 +940,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Brunei Dollar',
     // emoji: '🇧🇳',
     // timezones: ['UTC+08:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Brunei Darussalam',
       'ru': 'Бруней-Даруссалам',
@@ -973,7 +973,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Bulgarian Lev',
     // emoji: '🇧🇬',
     // timezones: ['UTC+02:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Bulgaria',
       'ru': 'Болгария',
@@ -1006,7 +1006,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'West African CFA Franc',
     // emoji: '🇧🇫',
     // timezones: ['UTC'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Burkina Faso',
       'ru': 'Буркина-Фасо',
@@ -1039,7 +1039,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Burundian Franc',
     // emoji: '🇧🇮',
     // timezones: ['UTC+02:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Burundi',
       'ru': 'Бурунди',
@@ -1072,7 +1072,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Cape Verdean Escudo',
     // emoji: '🇨🇻',
     // timezones: ['UTC-01:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Cabo Verde',
       'ru': 'Кабо-Верде',
@@ -1105,7 +1105,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Cambodian Riel',
     // emoji: '🇰🇭',
     // timezones: ['UTC+07:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Cambodia',
       'ru': 'Камбоджа',
@@ -1138,7 +1138,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Central African CFA Franc',
     // emoji: '🇨🇲',
     // timezones: ['UTC+01:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Cameroon',
       'ru': 'Камерун',
@@ -1171,13 +1171,13 @@ const List<Country> defaultCountries = [
     // currencyName: 'Canadian Dollar',
     // emoji: '🇨🇦',
     // timezones: [
-      'UTC-08:00',
-      'UTC-07:00',
-      'UTC-06:00',
-      'UTC-05:00',
-      'UTC-04:00',
-      'UTC-03:30',
-    ],
+    //   'UTC-08:00',
+    //   'UTC-07:00',
+    //   'UTC-06:00',
+    //   'UTC-05:00',
+    //   'UTC-04:00',
+    //   'UTC-03:30',
+    // ],
     // region: 'Americas',
     translations: {
       'en': 'Canada',
@@ -1211,7 +1211,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Central African CFA Franc',
     // emoji: '🇨🇫',
     // timezones: ['UTC+01:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Central African Republic',
       'ru': 'Центрально-Африканская Республика',
@@ -1244,7 +1244,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Central African CFA Franc',
     // emoji: '🇹🇩',
     // timezones: ['UTC+01:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Chad',
       'ru': 'Чад',
@@ -1310,7 +1310,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Chinese Yuan',
     // emoji: '🇨🇳',
     // timezones: ['UTC+08:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'China',
       'ru': 'Китай',
@@ -1376,7 +1376,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Comorian Franc',
     // emoji: '🇰🇲',
     // timezones: ['UTC+03:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Comoros',
       'ru': 'Коморы',
@@ -1409,7 +1409,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Central African CFA Franc',
     // emoji: '🇨🇬',
     // timezones: ['UTC+01:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Congo',
       'ru': 'Конго',
@@ -1442,7 +1442,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Congolese Franc',
     // emoji: '🇨🇩',
     // timezones: ['UTC+01:00', 'UTC+02:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Democratic Republic of the Congo',
       'ru': 'Демократическая Республика Конго',
@@ -1508,7 +1508,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'West African CFA Franc',
     // emoji: '🇨🇮',
     // timezones: ['UTC'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': "Côte d'Ivoire",
       'ru': 'Кот-д’Ивуар',
@@ -1541,7 +1541,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Croatian Kuna',
     // emoji: '🇭🇷',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Croatia',
       'ru': 'Хорватия',
@@ -1607,7 +1607,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇨🇾',
     // timezones: ['UTC+02:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Cyprus',
       'ru': 'Кипр',
@@ -1640,7 +1640,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Czech Koruna',
     // emoji: '🇨🇿',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Czech Republic',
       'ru': 'Чехия',
@@ -1673,7 +1673,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Danish Krone',
     // emoji: '🇩🇰',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Denmark',
       'ru': 'Дания',
@@ -1706,7 +1706,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Djiboutian Franc',
     // emoji: '🇩🇯',
     // timezones: ['UTC+03:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Djibouti',
       'ru': 'Джибути',
@@ -1838,7 +1838,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Egyptian Pound',
     // emoji: '🇪🇬',
     // timezones: ['UTC+02:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Egypt',
       'ru': 'Египет',
@@ -1904,7 +1904,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Central African CFA Franc',
     // emoji: '🇬🇶',
     // timezones: ['UTC+01:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Equatorial Guinea',
       'ru': 'Экваториальная Гвинея',
@@ -1937,7 +1937,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Eritrean Nakfa',
     // emoji: '🇪🇷',
     // timezones: ['UTC+03:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Eritrea',
       'ru': 'Эритрея',
@@ -1970,7 +1970,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇪🇪',
     // timezones: ['UTC+02:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Estonia',
       'ru': 'Эстония',
@@ -2003,7 +2003,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Swazi Lilangeni',
     // emoji: '🇸🇿',
     // timezones: ['UTC+02:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Eswatini',
       'ru': 'Эсватини',
@@ -2036,7 +2036,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Ethiopian Birr',
     // emoji: '🇪🇹',
     // timezones: ['UTC+03:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Ethiopia',
       'ru': 'Эфиопия',
@@ -2070,7 +2070,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Danish Krone',
     // emoji: '🇫🇴',
     // timezones: ['UTC+00:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Faroe Islands',
       'ru': 'Фарерские острова',
@@ -2105,7 +2105,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Fiji Dollar',
     // emoji: '🇫🇯',
     // timezones: ['UTC+12:00'],
-    region: 'Oceania',
+    // region: 'Oceania',
     translations: {
       'en': 'Fiji',
       'ru': 'Фиджи',
@@ -2140,7 +2140,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇫🇮',
     // timezones: ['UTC+02:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Finland',
       'ru': 'Финляндия',
@@ -2175,7 +2175,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇫🇷',
     // timezones: ['UTC+01:00', 'UTC+02:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'France',
       'ru': 'Франция',
@@ -2244,7 +2244,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'CFP Franc',
     // emoji: '🇵🇫',
     // timezones: ['UTC-10:00', 'UTC-09:30', 'UTC-09:00'],
-    region: 'Oceania',
+    // region: 'Oceania',
     translations: {
       'en': 'French Polynesia',
       'ru': 'Французская Полинезия',
@@ -2278,7 +2278,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Central African CFA Franc',
     // emoji: '🇬🇦',
     // timezones: ['UTC+01:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Gabon',
       'ru': 'Габон',
@@ -2311,7 +2311,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Gambian Dalasi',
     // emoji: '🇬🇲',
     // timezones: ['UTC'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Gambia',
       'ru': 'Гамбия',
@@ -2344,7 +2344,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Georgian Lari',
     // emoji: '🇬🇪',
     // timezones: ['UTC+04:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Georgia',
       'ru': 'Грузия',
@@ -2373,11 +2373,11 @@ const List<Country> defaultCountries = [
     name: 'Ghana',
     dialCode: '+233',
     iso3: 'GHA',
-    // currency: 'GHS',
+    //  currency: 'GHS',
     // currencyName: 'Ghanaian Cedi',
     // emoji: '🇬🇭',
     // timezones: ['UTC'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Ghana',
       'ru': 'Гана',
@@ -2410,7 +2410,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇬🇷',
     // timezones: ['UTC+02:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Greece',
       'ru': 'Греция',
@@ -2509,7 +2509,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Guinean Franc',
     // emoji: '🇬🇳',
     // timezones: ['UTC'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Guinea',
       'ru': 'Гвинея',
@@ -2542,7 +2542,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'West African CFA Franc',
     // emoji: '🇬🇼',
     // timezones: ['UTC'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Guinea-Bissau',
       'ru': 'Гвинея-Бисау',
@@ -2674,7 +2674,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Hungarian Forint',
     // emoji: '🇭🇺',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Hungary',
       'ru': 'Венгрия',
@@ -2707,7 +2707,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Icelandic Króna',
     // emoji: '🇮🇸',
     // timezones: ['UTC'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Iceland',
       'ru': 'Исландия',
@@ -2740,7 +2740,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Indian Rupee',
     // emoji: '🇮🇳',
     // timezones: ['UTC+05:30'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'India',
       'ru': 'Индия',
@@ -2773,7 +2773,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Indonesian Rupiah',
     // emoji: '🇮🇩',
     // timezones: ['UTC+07:00', 'UTC+08:00', 'UTC+09:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Indonesia',
       'ru': 'Индонезия',
@@ -2806,7 +2806,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Iranian Rial',
     // emoji: '🇮🇷',
     // timezones: ['UTC+03:30'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Iran',
       'ru': 'Иран',
@@ -2839,7 +2839,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Iraqi Dinar',
     // emoji: '🇮🇶',
     // timezones: ['UTC+03:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Iraq',
       'ru': 'Ирак',
@@ -2872,7 +2872,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇮🇪',
     // timezones: ['UTC'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Ireland',
       'ru': 'Ирландия',
@@ -2905,7 +2905,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Israeli New Shekel',
     // emoji: '🇮🇱',
     // timezones: ['UTC+02:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Israel',
       'ru': 'Израиль',
@@ -2938,7 +2938,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇮🇹',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Italy',
       'ru': 'Италия',
@@ -3004,7 +3004,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Japanese Yen',
     // emoji: '🇯🇵',
     // timezones: ['UTC+09:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Japan',
       'ru': 'Япония',
@@ -3037,7 +3037,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Jordanian Dinar',
     // emoji: '🇯🇴',
     // timezones: ['UTC+02:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Jordan',
       'ru': 'Иордания',
@@ -3070,7 +3070,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Kazakhstani Tenge',
     // emoji: '🇰🇿',
     // timezones: ['UTC+05:00', 'UTC+06:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Kazakhstan',
       'ru': 'Казахстан',
@@ -3103,7 +3103,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Kenyan Shilling',
     // emoji: '🇰🇪',
     // timezones: ['UTC+03:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Kenya',
       'ru': 'Кения',
@@ -3136,7 +3136,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Australian Dollar',
     // emoji: '🇰🇮',
     // timezones: ['UTC+12:00', 'UTC+13:00', 'UTC+14:00'],
-    region: 'Oceania',
+    // region: 'Oceania',
     translations: {
       'en': 'Kiribati',
       'ru': 'Кирибати',
@@ -3169,7 +3169,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Kuwaiti Dinar',
     // emoji: '🇰🇼',
     // timezones: ['UTC+03:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Kuwait',
       'ru': 'Кувейт',
@@ -3202,7 +3202,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Kyrgyzstani Som',
     // emoji: '🇰🇬',
     // timezones: ['UTC+06:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Kyrgyzstan',
       'ru': 'Киргизия',
@@ -3235,7 +3235,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Lao Kip',
     // emoji: '🇱🇦',
     // timezones: ['UTC+07:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Laos',
       'ru': 'Лаос',
@@ -3268,7 +3268,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇱🇻',
     // timezones: ['UTC+02:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Latvia',
       'ru': 'Латвия',
@@ -3301,7 +3301,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Lebanese Pound',
     // emoji: '🇱🇧',
     // timezones: ['UTC+02:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Lebanon',
       'ru': 'Ливан',
@@ -3334,7 +3334,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Lesotho Loti',
     // emoji: '🇱🇸',
     // timezones: ['UTC+02:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Lesotho',
       'ru': 'Лесото',
@@ -3367,7 +3367,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Liberian Dollar',
     // emoji: '🇱🇷',
     // timezones: ['UTC'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Liberia',
       'ru': 'Либерия',
@@ -3400,7 +3400,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Libyan Dinar',
     // emoji: '🇱🇾',
     // timezones: ['UTC+02:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Libya',
       'ru': 'Ливия',
@@ -3433,7 +3433,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Swiss Franc',
     // emoji: '🇱🇮',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Liechtenstein',
       'ru': 'Лихтенштейн',
@@ -3466,7 +3466,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇱🇹',
     // timezones: ['UTC+02:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Lithuania',
       'ru': 'Литва',
@@ -3499,7 +3499,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇱🇺',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Luxembourg',
       'ru': 'Люксембург',
@@ -3532,7 +3532,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Malagasy Ariary',
     // emoji: '🇲🇬',
     // timezones: ['UTC+03:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Madagascar',
       'ru': 'Мадагаскар',
@@ -3565,7 +3565,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Malawian Kwacha',
     // emoji: '🇲🇼',
     // timezones: ['UTC+02:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Malawi',
       'ru': 'Малави',
@@ -3598,7 +3598,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Malaysian Ringgit',
     // emoji: '🇲🇾',
     // timezones: ['UTC+08:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Malaysia',
       'ru': 'Малайзия',
@@ -3631,7 +3631,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Maldivian Rufiyaa',
     // emoji: '🇲🇻',
     // timezones: ['UTC+05:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Maldives',
       'ru': 'Мальдивы',
@@ -3664,7 +3664,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'West African CFA Franc',
     // emoji: '🇲🇱',
     // timezones: ['UTC'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Mali',
       'ru': 'Мали',
@@ -3697,7 +3697,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇲🇹',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Malta',
       'ru': 'Мальта',
@@ -3730,7 +3730,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'US Dollar',
     // emoji: '🇲🇭',
     // timezones: ['UTC+12:00'],
-    region: 'Oceania',
+    // region: 'Oceania',
     translations: {
       'en': 'Marshall Islands',
       'ru': 'Маршалловы Острова',
@@ -3763,7 +3763,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Mauritanian Ouguiya',
     // emoji: '🇲🇷',
     // timezones: ['UTC'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Mauritania',
       'ru': 'Мавритания',
@@ -3796,7 +3796,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Mauritian Rupee',
     // emoji: '🇲🇺',
     // timezones: ['UTC+04:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Mauritius',
       'ru': 'Маврикий',
@@ -3862,7 +3862,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'US Dollar',
     // emoji: '🇫🇲',
     // timezones: ['UTC+10:00', 'UTC+11:00'],
-    region: 'Oceania',
+    // region: 'Oceania',
     translations: {
       'en': 'Micronesia',
       'ru': 'Микронезия',
@@ -3895,7 +3895,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Moldovan Leu',
     // emoji: '🇲🇩',
     // timezones: ['UTC+02:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Moldova',
       'ru': 'Молдавия',
@@ -3928,7 +3928,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇲🇨',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Monaco',
       'ru': 'Монако',
@@ -3961,7 +3961,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Mongolian Tögrög',
     // emoji: '🇲🇳',
     // timezones: ['UTC+07:00', 'UTC+08:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Mongolia',
       'ru': 'Монголия',
@@ -3994,7 +3994,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇲🇪',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Montenegro',
       'ru': 'Черногория',
@@ -4027,7 +4027,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Moroccan Dirham',
     // emoji: '🇲🇦',
     // timezones: ['UTC'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Morocco',
       'ru': 'Марокко',
@@ -4060,7 +4060,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Mozambican Metical',
     // emoji: '🇲🇿',
     // timezones: ['UTC+02:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Mozambique',
       'ru': 'Мозамбик',
@@ -4093,7 +4093,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Burmese Kyat',
     // emoji: '🇲🇲',
     // timezones: ['UTC+06:30'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Myanmar',
       'ru': 'Мьянма',
@@ -4126,7 +4126,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Namibian Dollar',
     // emoji: '🇳🇦',
     // timezones: ['UTC+01:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Namibia',
       'ru': 'Намибия',
@@ -4159,7 +4159,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Australian Dollar',
     // emoji: '🇳🇷',
     // timezones: ['UTC+12:00'],
-    region: 'Oceania',
+    // region: 'Oceania',
     translations: {
       'en': 'Nauru',
       'ru': 'Науру',
@@ -4192,7 +4192,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Nepalese Rupee',
     // emoji: '🇳🇵',
     // timezones: ['UTC+05:45'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Nepal',
       'ru': 'Непал',
@@ -4225,7 +4225,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇳🇱',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Netherlands',
       'ru': 'Нидерланды',
@@ -4258,7 +4258,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'New Zealand Dollar',
     // emoji: '🇳🇿',
     // timezones: ['UTC+12:00', 'UTC+13:00'],
-    region: 'Oceania',
+    // region: 'Oceania',
     translations: {
       'en': 'New Zealand',
       'ru': 'Новая Зеландия',
@@ -4324,7 +4324,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'West African CFA Franc',
     // emoji: '🇳🇪',
     // timezones: ['UTC+01:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Niger',
       'ru': 'Нигер',
@@ -4357,7 +4357,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Nigerian Naira',
     // emoji: '🇳🇬',
     // timezones: ['UTC+01:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Nigeria',
       'ru': 'Нигерия',
@@ -4390,7 +4390,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'North Korean Won',
     // emoji: '🇰🇵',
     // timezones: ['UTC+09:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'North Korea',
       'ru': 'Северная Корея',
@@ -4423,7 +4423,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Macedonian Denar',
     // emoji: '🇲🇰',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'North Macedonia',
       'ru': 'Северная Македония',
@@ -4456,7 +4456,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Norwegian Krone',
     // emoji: '🇳🇴',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Norway',
       'ru': 'Норвегия',
@@ -4489,7 +4489,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Omani Rial',
     // emoji: '🇴🇲',
     // timezones: ['UTC+04:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Oman',
       'ru': 'Оман',
@@ -4522,7 +4522,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Pakistani Rupee',
     // emoji: '🇵🇰',
     // timezones: ['UTC+05:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Pakistan',
       'ru': 'Пакистан',
@@ -4555,7 +4555,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'US Dollar',
     // emoji: '🇵🇼',
     // timezones: ['UTC+09:00'],
-    region: 'Oceania',
+    // region: 'Oceania',
     translations: {
       'en': 'Palau',
       'ru': 'Палау',
@@ -4621,7 +4621,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Papua New Guinean Kina',
     // emoji: '🇵🇬',
     // timezones: ['UTC+10:00'],
-    region: 'Oceania',
+    // region: 'Oceania',
     translations: {
       'en': 'Papua New Guinea',
       'ru': 'Папуа — Новая Гвинея',
@@ -4720,7 +4720,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Philippine Peso',
     // emoji: '🇵🇭',
     // timezones: ['UTC+08:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Philippines',
       'ru': 'Филиппины',
@@ -4753,7 +4753,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Polish Złoty',
     // emoji: '🇵🇱',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Poland',
       'ru': 'Польша',
@@ -4786,7 +4786,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇵🇹',
     // timezones: ['UTC', 'UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Portugal',
       'ru': 'Португалия',
@@ -4819,7 +4819,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Qatari Riyal',
     // emoji: '🇶🇦',
     // timezones: ['UTC+03:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Qatar',
       'ru': 'Катар',
@@ -4852,7 +4852,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Romanian Leu',
     // emoji: '🇷🇴',
     // timezones: ['UTC+02:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Romania',
       'ru': 'Румыния',
@@ -4885,19 +4885,19 @@ const List<Country> defaultCountries = [
     // currencyName: 'Russian Ruble',
     // emoji: '🇷🇺',
     // timezones: [
-      'UTC+02:00',
-      'UTC+03:00',
-      'UTC+04:00',
-      'UTC+05:00',
-      'UTC+06:00',
-      'UTC+07:00',
-      'UTC+08:00',
-      'UTC+09:00',
-      'UTC+10:00',
-      'UTC+11:00',
-      'UTC+12:00',
-    ],
-    region: 'Europe',
+    //   'UTC+02:00',
+    //   'UTC+03:00',
+    //   'UTC+04:00',
+    //   'UTC+05:00',
+    //   'UTC+06:00',
+    //   'UTC+07:00',
+    //   'UTC+08:00',
+    //   'UTC+09:00',
+    //   'UTC+10:00',
+    //   'UTC+11:00',
+    //   'UTC+12:00',
+    // ],
+    // region: 'Europe',
     translations: {
       'en': 'Russia',
       'ru': 'Россия',
@@ -4930,7 +4930,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Rwandan Franc',
     // emoji: '🇷🇼',
     // timezones: ['UTC+02:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Rwanda',
       'ru': 'Руанда',
@@ -5062,7 +5062,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Samoan Tala',
     // emoji: '🇼🇸',
     // timezones: ['UTC+13:00'],
-    region: 'Oceania',
+    // region: 'Oceania',
     translations: {
       'en': 'Samoa',
       'ru': 'Самоа',
@@ -5095,7 +5095,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇸🇲',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'San Marino',
       'ru': 'Сан-Марино',
@@ -5128,7 +5128,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Sao Tome and Principe Dobra',
     // emoji: '🇸🇹',
     // timezones: ['UTC'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Sao Tome and Principe',
       'ru': 'Сан-Томе и Принсипи',
@@ -5161,7 +5161,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Saudi Riyal',
     // emoji: '🇸🇦',
     // timezones: ['UTC+03:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Saudi Arabia',
       'ru': 'Саудовская Аравия',
@@ -5194,7 +5194,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'West African CFA Franc',
     // emoji: '🇸🇳',
     // timezones: ['UTC'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Senegal',
       'ru': 'Сенегал',
@@ -5227,7 +5227,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Serbian Dinar',
     // emoji: '🇷🇸',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Serbia',
       'ru': 'Сербия',
@@ -5260,7 +5260,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Seychellois Rupee',
     // emoji: '🇸🇨',
     // timezones: ['UTC+04:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Seychelles',
       'ru': 'Сейшельские Острова',
@@ -5293,7 +5293,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Sierra Leonean Leone',
     // emoji: '🇸🇱',
     // timezones: ['UTC'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Sierra Leone',
       'ru': 'Сьерра-Леоне',
@@ -5326,7 +5326,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Singapore Dollar',
     // emoji: '🇸🇬',
     // timezones: ['UTC+08:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Singapore',
       'ru': 'Сингапур',
@@ -5359,7 +5359,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇸🇰',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Slovakia',
       'ru': 'Словакия',
@@ -5392,7 +5392,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇸🇮',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Slovenia',
       'ru': 'Словения',
@@ -5425,7 +5425,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Solomon Islands Dollar',
     // emoji: '🇸🇧',
     // timezones: ['UTC+11:00'],
-    region: 'Oceania',
+    // region: 'Oceania',
     translations: {
       'en': 'Solomon Islands',
       'ru': 'Соломоновы Острова',
@@ -5458,7 +5458,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Somali Shilling',
     // emoji: '🇸🇴',
     // timezones: ['UTC+03:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Somalia',
       'ru': 'Сомали',
@@ -5491,7 +5491,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'South African Rand',
     // emoji: '🇿🇦',
     // timezones: ['UTC+02:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'South Africa',
       'ru': 'Южная Африка',
@@ -5524,7 +5524,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'South Korean Won',
     // emoji: '🇰🇷',
     // timezones: ['UTC+09:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'South Korea',
       'ru': 'Южная Корея',
@@ -5557,7 +5557,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'South Sudanese Pound',
     // emoji: '🇸🇸',
     // timezones: ['UTC+03:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'South Sudan',
       'ru': 'Южный Судан',
@@ -5590,7 +5590,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇪🇸',
     // timezones: ['UTC', 'UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Spain',
       'ru': 'Испания',
@@ -5623,7 +5623,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Sri Lankan Rupee',
     // emoji: '🇱🇰',
     // timezones: ['UTC+05:30'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Sri Lanka',
       'ru': 'Шри-Ланка',
@@ -5656,7 +5656,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Sudanese Pound',
     // emoji: '🇸🇩',
     // timezones: ['UTC+03:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Sudan',
       'ru': 'Судан',
@@ -5722,7 +5722,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Swedish Krona',
     // emoji: '🇸🇪',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Sweden',
       'ru': 'Швеция',
@@ -5755,7 +5755,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Swiss Franc',
     // emoji: '🇨🇭',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Switzerland',
       'ru': 'Швейцария',
@@ -5788,7 +5788,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Syrian Pound',
     // emoji: '🇸🇾',
     // timezones: ['UTC+02:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Syria',
       'ru': 'Сирия',
@@ -5821,7 +5821,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'New Taiwan Dollar',
     // emoji: '🇹🇼',
     // timezones: ['UTC+08:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Taiwan',
       'ru': 'Тайвань',
@@ -5854,7 +5854,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Tajikistani Somoni',
     // emoji: '🇹🇯',
     // timezones: ['UTC+05:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Tajikistan',
       'ru': 'Таджикистан',
@@ -5887,7 +5887,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Tanzanian Shilling',
     // emoji: '🇹🇿',
     // timezones: ['UTC+03:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Tanzania',
       'ru': 'Танзания',
@@ -5920,7 +5920,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Thai Baht',
     // emoji: '🇹🇭',
     // timezones: ['UTC+07:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Thailand',
       'ru': 'Таиланд',
@@ -5953,7 +5953,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'US Dollar',
     // emoji: '🇹🇱',
     // timezones: ['UTC+09:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Timor-Leste',
       'ru': 'Восточный Тимор',
@@ -5986,7 +5986,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'West African CFA Franc',
     // emoji: '🇹🇬',
     // timezones: ['UTC'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Togo',
       'ru': 'Того',
@@ -6019,7 +6019,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Tongan Paʻanga',
     // emoji: '🇹🇴',
     // timezones: ['UTC+13:00'],
-    region: 'Oceania',
+    // region: 'Oceania',
     translations: {
       'en': 'Tonga',
       'ru': 'Тонга',
@@ -6085,7 +6085,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Tunisian Dinar',
     // emoji: '🇹🇳',
     // timezones: ['UTC+01:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Tunisia',
       'ru': 'Тунис',
@@ -6118,7 +6118,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Turkish Lira',
     // emoji: '🇹🇷',
     // timezones: ['UTC+03:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Turkey',
       'ru': 'Турция',
@@ -6151,7 +6151,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Turkmenistani Manat',
     // emoji: '🇹🇲',
     // timezones: ['UTC+05:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Turkmenistan',
       'ru': 'Туркменистан',
@@ -6184,7 +6184,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Australian Dollar',
     // emoji: '🇹🇻',
     // timezones: ['UTC+12:00'],
-    region: 'Oceania',
+    // region: 'Oceania',
     translations: {
       'en': 'Tuvalu',
       'ru': 'Тувалу',
@@ -6218,7 +6218,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Ugandan Shilling',
     // emoji: '🇺🇬',
     // timezones: ['UTC+03:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Uganda',
       'ru': 'Уганда',
@@ -6251,7 +6251,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Ukrainian Hryvnia',
     // emoji: '🇺🇦',
     // timezones: ['UTC+02:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Ukraine',
       'ru': 'Украина',
@@ -6284,7 +6284,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'UAE Dirham',
     // emoji: '🇦🇪',
     // timezones: ['UTC+04:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'United Arab Emirates',
       'ru': 'Объединённые Арабские Эмираты',
@@ -6317,7 +6317,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'British Pound',
     // emoji: '🇬🇧',
     // timezones: ['UTC', 'UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'United Kingdom',
       'ru': 'Великобритания',
@@ -6350,18 +6350,18 @@ const List<Country> defaultCountries = [
     // currencyName: 'US Dollar',
     // emoji: '🇺🇸',
     // timezones: [
-      'UTC-12:00',
-      'UTC-11:00',
-      'UTC-10:00',
-      'UTC-09:00',
-      'UTC-08:00',
-      'UTC-07:00',
-      'UTC-06:00',
-      'UTC-05:00',
-      'UTC-04:00',
-      'UTC+10:00',
-      'UTC+12:00',
-    ],
+    //   'UTC-12:00',
+    //   'UTC-11:00',
+    //   'UTC-10:00',
+    //   'UTC-09:00',
+    //   'UTC-08:00',
+    //   'UTC-07:00',
+    //   'UTC-06:00',
+    //   'UTC-05:00',
+    //   'UTC-04:00',
+    //   'UTC+10:00',
+    //   'UTC+12:00',
+    // ],
     // region: 'Americas',
     translations: {
       'en': 'United States',
@@ -6428,7 +6428,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Uzbekistani Som',
     // emoji: '🇺🇿',
     // timezones: ['UTC+05:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Uzbekistan',
       'ru': 'Узбекистан',
@@ -6461,7 +6461,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Vanuatu Vatu',
     // emoji: '🇻🇺',
     // timezones: ['UTC+11:00'],
-    region: 'Oceania',
+    // region: 'Oceania',
     translations: {
       'en': 'Vanuatu',
       'ru': 'Вануату',
@@ -6494,7 +6494,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Euro',
     // emoji: '🇻🇦',
     // timezones: ['UTC+01:00'],
-    region: 'Europe',
+    // region: 'Europe',
     translations: {
       'en': 'Vatican City',
       'ru': 'Ватикан',
@@ -6560,7 +6560,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Vietnamese Dong',
     // emoji: '🇻🇳',
     // timezones: ['UTC+07:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Vietnam',
       'ru': 'Вьетнам',
@@ -6593,7 +6593,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Yemeni Rial',
     // emoji: '🇾🇪',
     // timezones: ['UTC+03:00'],
-    region: 'Asia',
+    // region: 'Asia',
     translations: {
       'en': 'Yemen',
       'ru': 'Йемен',
@@ -6626,7 +6626,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Zambian Kwacha',
     // emoji: '🇿🇲',
     // timezones: ['UTC+02:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Zambia',
       'ru': 'Замбия',
@@ -6659,7 +6659,7 @@ const List<Country> defaultCountries = [
     // currencyName: 'Zimbabwean Dollar',
     // emoji: '🇿🇼',
     // timezones: ['UTC+02:00'],
-    region: 'Africa',
+    // region: 'Africa',
     translations: {
       'en': 'Zimbabwe',
       'ru': 'Зимбабве',

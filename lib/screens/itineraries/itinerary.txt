@@ -1,0 +1,117 @@
+Objetivo de la pantalla
+
+Permitir que los usuarios:
+
+Vean sus itinerarios creados (personales o compartidos).
+
+Creen nuevos itinerarios con fechas, destinos, y actividades.
+
+Puedan compartir un itinerario con amigos (enlace, QR, o invitación).
+
+Editen o eliminen itinerarios.
+
+(Opcional) Vean un resumen del viaje (mapa, lugares, costo estimado, etc.).
+
+
+lib/
+ └─ features/
+     └─ itineraries/
+          ├─ presentation/
+          │   ├─ screens/
+          │   │   ├─ itineraries_screen.dart        ← lista principal
+          │   │   ├─ itinerary_detail_screen.dart   ← detalle de un itinerario
+          │   │   └─ itinerary_form_screen.dart     ← creación/edición
+          │   ├─ widgets/
+          │   │   ├─ itinerary_card.dart
+          │   │   ├─ itinerary_day_item.dart
+          │   │   └─ share_itinerary_dialog.dart
+          │   └─ providers/
+          │       └─ itinerary_provider.dart
+          ├─ data/
+          │   ├─ itinerary_repository.dart
+          │   └─ itinerary_model.dart
+          └─ domain/
+              └─ usecases/
+                  ├─ create_itinerary.dart
+                  ├─ update_itinerary.dart
+                  ├─ delete_itinerary.dart
+
+
+
+
+Estructura visual
+╔══════════════════════════════════╗
+║  Mis Itinerarios ✈️              ║ ← AppBar
+║  [ + Nuevo itinerario ]          ║ ← botón principal
+╟──────────────────────────────────╢
+║ 🔍  Buscar itinerario...         ║ ← barra de búsqueda
+╟──────────────────────────────────╢
+║ 🗓️  Ver próximos viajes          ║ ← subtítulo seccional
+║ ┌──────────────────────────────┐ ║
+║ │ Imagen Playa Rincón          │ ║ ← ItineraryCard
+║ │ “Semana Santa en Samaná”     │ ║
+║ │ 4 lugares · 3 días           │ ║
+║ └──────────────────────────────┘ ║
+║ ... más cards                   ║
+╟──────────────────────────────────╢
+║ 👥 Compartidos contigo          ║
+║ ┌──────────────────────────────┐ ║
+║ │ Imagen Jarabacoa             │ ║
+║ │ “Fin de semana verde 🌲”     │ ║
+║ │ Por Massiel Moreta           │ ║
+║ └──────────────────────────────┘ ║
+╚══════════════════════════════════╝
+
+
+Pantalla de detalle (ItineraryDetailScreen)
+
+Muestra la información completa:
+
+Mapa de los lugares (Google Maps o similar).
+
+Lista de días y actividades (por ejemplo, Día 1: llegada a Samaná → Playa Frontón → Cena local).
+
+Botón para compartir o invitar.
+
+(Opcional) Botón “Iniciar recorrido”.
+
+
+Pantalla de creación / edición (ItineraryFormScreen)
+
+Formulario básico:
+
+Nombre del itinerario.
+
+Fecha de inicio / fin.
+
+Lugares a visitar (usa FilterChip o Dropdown).
+
+Notas o descripción.
+
+Botón “Guardar”.
+
+
+
+Funciones adicionales
+
+Compartir itinerario:
+
+Generar un enlace con ID o un QR que otros puedan abrir desde la app.
+
+Modo colaborativo (opcional):
+
+Permitir que amigos agreguen actividades al mismo itinerario.
+
+Exportar:
+
+PDF o imagen con el resumen del viaje.
+
+Toques visuales estilo “Destino Quisqueya”
+
+Usa tu AppColors.primaryBlue como color de encabezado y botones.
+
+Añade íconos tropicales o animaciones (Lottie) para dar un toque turístico.
+
+Fondo claro con sombras suaves y tipografía elegante (Raleway o Imprima).
+
+Card con fotos reales de lugares turísticos dominicanos.
