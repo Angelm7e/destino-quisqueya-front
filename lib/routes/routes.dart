@@ -14,6 +14,7 @@ import 'package:destino_quisqueya_front/screens/itineraries/itineraryDetailScree
 import 'package:destino_quisqueya_front/screens/itineraries/itineraryFormScreen.dart';
 import 'package:destino_quisqueya_front/screens/nearBy/nearByScreen.dart';
 import 'package:destino_quisqueya_front/screens/places/placesByCategoryScreen/placesByCategoryScreen.dart';
+import 'package:destino_quisqueya_front/screens/places/placesPhotosGallery/placePhotosGalleryScreen.dart';
 import 'package:destino_quisqueya_front/screens/profile/profileScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -37,6 +38,7 @@ final Map<String, WidgetBuilder> routes = {
   ForgotPasswordScreen.routeName: (context) => ForgotPasswordScreen(),
   ForgotEmailScreen.routeName: (context) => ForgotEmailScreen(),
   TestApp.routeName: (context) => TestApp(),
+  PlacePhotosGalleryScreen.routeName: (context) => const PlacePhotosGalleryScreen(),
 
   // Anonimus Screens
   AnonimusHomeScreen.routeName: (context) => const AnonimusHomeScreen(),

@@ -1,4 +1,5 @@
 import 'package:destino_quisqueya_front/models/destiny.model.dart';
+import 'package:destino_quisqueya_front/screens/places/placesPhotosGallery/placePhotosGalleryScreen.dart';
 import 'package:destino_quisqueya_front/utilities/const/app_colors.dart';
 import 'package:destino_quisqueya_front/widgets/headerCarousel.widget.dart';
 import 'package:flutter/material.dart';
@@ -105,21 +106,48 @@ class PlaceDetailScreen extends StatelessWidget {
           SliverToBoxAdapter(
             child: SectionCard(
               title: 'Galería de fotos',
-              child: SizedBox(
-                height: 90,
-                child: ListView.separated(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: place.photos.length,
-                  separatorBuilder: (_, __) => const SizedBox(width: 8),
-                  itemBuilder: (context, i) => ClipRRect(
-                    borderRadius: BorderRadius.circular(8),
-                    child: Image.asset(
-                      place.photos[i],
-                      width: 120,
-                      fit: BoxFit.cover,
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 90,
+                    child: ListView.separated(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: place.photos.length,
+                      separatorBuilder: (_, __) => const SizedBox(width: 8),
+                      itemBuilder: (context, i) => ClipRRect(
+                        borderRadius: BorderRadius.circular(8),
+                        child: Image.asset(
+                          place.photos[i],
+                          width: 120,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
                     ),
                   ),
-                ),
+                  const SizedBox(height: 12),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton.icon(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => PlacePhotosGalleryScreen(
+                              place: place,
+                            ),
+                          ),
+                        );
+                      },
+                      icon: const Icon(Icons.image),
+                      label: const Text('Ver mas fotos'),
+                      style: ElevatedButton.styleFrom(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
